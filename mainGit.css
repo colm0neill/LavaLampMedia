@@ -1,3 +1,23 @@
+@media only screen and (max-width: 992px){
+	.navbar-brand-default{
+		margin-top:-24px;
+		padding-left:25px;
+		
+		width:70%;
+		height:20%;
+		margin-left:50px;
+		text-align:left;
+		
+	}
+	.navbar-brand-default img{
+		width:100px;
+		height:100px;
+		position:absolute;
+		left:-10px;
+		top:16px;
+	}
+}
+
 @font-face {
 font-family: BondoniFLF;
 src: url(BodoniFLF-Roman.ttf);
@@ -32,8 +52,9 @@ padding-bottom:0px;
 
 
 
-.navbar-brand{
-padding-top: 30px;
+.navbar-brand-default{
+	color:black;
+padding-top: 24px;
 padding-bottom:30px;
 font-family: BondoniFLF;
 font-size:35px;
@@ -46,8 +67,9 @@ color:black;
 
 }
 
-.navbar-brand:focus, .navbar-brand:hover{
+.navbar-brand-default:focus, .navbar-brand-default:hover{
 color: #000;
+text-decoration:none;
 }
 
 
