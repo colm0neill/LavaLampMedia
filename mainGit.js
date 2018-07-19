@@ -1,5 +1,6 @@
 
 
+
 document.addEventListener('DOMContentLoaded', init, false);
 function init(){
 document.getElementById("myBtns").addEventListener("click", myFunction,);
@@ -12,6 +13,14 @@ $(document).ready(function(){
     });
 });
 
+var scene = document.getElementById('scene');
+  var input = document.getElementById('scene-input');
+  // Pretty simple huh?
+  var parallax = new Parallax(scene, {
+    hoverOnly: true,
+    relativeInput: true,
+	friction: .1
+  });
 
 window.onload = function() {
   Particles.init({
@@ -64,6 +73,8 @@ function rmvGrey(){
 		document.getElementById("collapsibleNavbar").style.background = "rgba(111,111,111,0.8)";
 	}
 }
+
+
 
 /*function myFunction(){
 

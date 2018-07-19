@@ -1,4 +1,4 @@
-@media only screen and (max-width: 435px){
+@media only screen and (max-width: 465px){
 	.navbar-brand-default img{
 		position:absolute;
 		left:-10px;
@@ -82,8 +82,8 @@ color:black;
 
 }
 
-.navbar-brand-default:focus, .navbar-brand-default:hover{
-color: #000;
+.navbar-brand-default, a:hover{
+color: #000; 
 text-decoration:none;
 }
 
@@ -214,6 +214,48 @@ padding-bottom:30px;
 position:relative;
 background-color:rgba(50,50,50,0.8);
 margin:30px;
+}
+.layer1{
+	opacity:.6;
+}
+
+.layer2{
+	opacity:.9;
+}
+
+
+
+.page-footer-default{
+	background-color:#cc0670;
+	line-height:30px;
+	letter-spacing: 5px;
+	color:#5c5c5c;
+}
+
+.address{
+	text-align:right;
+}
+
+.fa-instagram{
+	margin-top:20px;
+}
+
+.links a {
+	color:#5c5c5c;
+}
+
+.links a:hover , .links a:focus{
+	text-decoration:none;
+	color:#55bdd4;
+}
+.footer-copyright,a{
+	text-decoration:none;
+	color:#5c5c5c;
+}
+
+.footer-copyright a:hover , .footer-copyright a:focus{
+	text-decoration:none;
+	color:#55bdd4;
 }
 }
 
