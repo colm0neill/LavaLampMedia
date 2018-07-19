@@ -1,12 +1,19 @@
+@media only screen and (max-width: 435px){
+	.navbar-brand-default img{
+		position:absolute;
+		left:-10px;
+		top:12px !Important;
+	}
+}
 @media only screen and (max-width: 992px){
 	.navbar-brand-default{
 		margin-top:0px;
 		padding-top:10px !Important;
 		padding-bottom:15px !Important;
-		padding-left:25px;
+		padding-left:15px;
 		
 		width:70%;
-		line-height:40px;
+		line-height:40px !Important;
 		margin-left:50px;
 		text-align:left;
 		
@@ -16,11 +23,11 @@
 		height:100px;
 		position:absolute;
 		left:-10px;
-		top:13px;
+		top:0px;
 	}
 	
 	.menuBtn{
-		/*margin-top:-5px !Important;*/
+		margin-top:23px !Important;*/
 	}
 }
 
@@ -59,11 +66,13 @@ padding-bottom:0px;
 
 
 .navbar-brand-default{
-	color:black;
+color:black;
 padding-top: 24px;
 padding-bottom:30px;
 font-family: BondoniFLF;
-font-size:35px;
+font-size:38px;
+line-height:100px;
+
 }
 
 .navbar-nav.nav-item>li:focus,
