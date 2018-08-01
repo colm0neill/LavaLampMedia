@@ -210,16 +210,24 @@ padding-top: 30px;
 padding-bottom:30px;
 }
 
+.welcome{
+	padding:12%;
+}
+
+
+
 .ipsum{
 position:relative;
 background-color:rgba(50,50,50,0.8);
 margin:30px;
 }
 .layer1{
+	padding-left:20%;
 	opacity:.6;
 }
 
 .layer2{
+	padding-left:20%;
 	opacity:.9;
 }
 

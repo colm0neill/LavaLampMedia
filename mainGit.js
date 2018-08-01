@@ -18,7 +18,7 @@ var scene = document.getElementById('scene');
   // Pretty simple huh?
   var parallax = new Parallax(scene, {
     hoverOnly: true,
-    relativeInput: true,
+    relativeInput: false,
 	friction: .1
   });
 
