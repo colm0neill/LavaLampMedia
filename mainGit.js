@@ -19,14 +19,16 @@ var scene = document.getElementById('scene');
   var parallax = new Parallax(scene, {
     hoverOnly: true,
     relativeInput: false,
-	friction: .1
+	friction: .1,
   });
 
 window.onload = function() {
   Particles.init({
     selector: '.background',
 	maxParticles: 130,
+	speed: .5,
 	sizeVariations: 5,
+	minDistance: 120,
 	color: ['#cc0670', '#aaaaaa', '#55bdd4'],
     connectParticles: true,
 	
@@ -42,7 +44,6 @@ window.onload = function() {
   ]
 });
 }
-
 
 function myFunction() {
 	 var x = document.getElementById("myBtns").getAttribute("aria-expanded"); 
