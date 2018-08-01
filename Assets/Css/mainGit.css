@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 465px){
 	.navbar-brand-default img{
 		position:absolute;
@@ -33,7 +34,7 @@
 
 @font-face {
 font-family: BondoniFLF;
-src: url(BodoniFLF-Roman.ttf);
+src: url( file:///C:/Users/Colm%20O"'"Neill/Documents/GitHub/Bootstrap%20Website/Assets/Fonts/BodoniFLF-Roman.ttf);
 }
 
 html,
@@ -60,11 +61,63 @@ body{
 color:#000;
 font-family: 'Oswald', sans-serif;
 }
-.navbar{
-padding-bottom:0px;	
+
+/* Pre-Loader */
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #eee;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+	border:1px black solid;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+#loader {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+}
+h1 {
+    color: #EEEEEE;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+ 
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
 }
 
 
+
+.loaded #loader {
+    opacity: 0;
+	
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+
+
+/* NavBar */
+.navbar{
+padding-bottom:0px;	
+}
 
 .navbar-brand-default{
 color:black;
