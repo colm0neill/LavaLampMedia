@@ -1,0 +1,70 @@
+
+
+.preloader .textContainer > div{
+    width: 6.66%;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0;
+	}
+	
+	.preloader .textContainer{
+	    width: 94%;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 20px;
+    /* font-family: BrandonGrotesque-Black; */
+    font-family: brandon-grotesque;
+    font-weight: 900;
+    opacity: 0;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+
+.preloader .textContainer > div:before{
+content: attr(data-text);
+    position: absolute;
+    /* left: -10px; */
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: #c5ff00;
+    background: #3c3c3e;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 1s infinite linear alternate-reverse;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    width: 5.8%;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0;
+	}
+	
+	.preloader .textContainer > div:after{
+	
+	content: attr(data-text);
+    position: absolute;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    /* left: 10px; */
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: #c5ff00;
+    background: #3c3c3e;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 1.2s infinite linear alternate-reverse;
+    width: 5.8%;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0;
+}

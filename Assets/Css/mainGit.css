@@ -34,7 +34,7 @@
 
 @font-face {
 font-family: BondoniFLF;
-src: url( file:///C:/Users/Colm%20O"'"Neill/Documents/GitHub/Bootstrap%20Website/Assets/Fonts/BodoniFLF-Roman.ttf);
+src: url(BodoniFLF-Roman.ttf);
 }
 
 html,
@@ -69,13 +69,12 @@ font-family: 'Oswald', sans-serif;
     top: 0;
     width: 51%;
     height: 100%;
-    background: #eee;
+    background:#fff;
     z-index: 1000;
 }
  
 #loader-wrapper .loader-section.section-left {
     left: 0;
-	border:1px black solid;
 }
  
 #loader-wrapper .loader-section.section-right {
@@ -90,12 +89,16 @@ h1 {
 }
 
 .loaded #loader-wrapper .loader-section.section-left {
+	transition:all 1s ease-out;
+	-webkit-transition:all 1s ease-out;
     -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(-100%);  /* IE 9 */
     transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
 }
  
 .loaded #loader-wrapper .loader-section.section-right {
+	transition:all 1s ease-out;
+	-webkit-transition:all 1s ease-out;
     -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(100%);  /* IE 9 */
     transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
@@ -113,6 +116,75 @@ h1 {
 }
 
 
+.glitch {
+
+  position: relative;
+  font-size:40px;
+  letter-spacing:100px;
+  
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  color:black;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  /* ... anything needed to make it identical */
+ 
+	font-size:40px;
+  letter-spacing:100px;
+  left: 0;
+  top:0;
+  /* variation */
+  left: 2px;
+  text-shadow: -1px 0 blue;
+  
+  /* important: opaque background masks the original */
+  background: white;
+  animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+.glitch::after {
+  /* ... anything needed to make it identical */
+  
+font-size:40px;
+  letter-spacing:100px;
+  left: 0;
+  top:0;
+  /* variation */
+  left: -2px;
+  text-shadow: -1px 0 grey;
+  
+  /* important: opaque background masks the original */
+  background: white;
+   animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(70px, 450px, 76px, 0);
+  }
+  20% {
+    clip: rect(29px, 450px, 16px, 0);
+  }
+  40% {
+    clip: rect(76px, 450px, 3px, 0);
+  }
+  60% {
+    clip: rect(42px, 450px, 78px, 0);
+  }
+  80% {
+    clip: rect(15px, 450px, 13px, 0);
+  }
+  100% {
+    clip: rect(53px, 450px, 5px, 0);
+  }
+}
 
 /* NavBar */
 .navbar{
@@ -290,6 +362,13 @@ margin:30px;
   
 }
 
+/* Content Area */
+.selector:hover{
+	width: 200% !Important;
+	height:200%;
+	font-size: 3em;
+	
+}
 
 /* Footer Styles*/
 
