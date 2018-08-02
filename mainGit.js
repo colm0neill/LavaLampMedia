@@ -1,4 +1,4 @@
-/*
+
 $(document).ready(function() {
  
     setTimeout(function(){
@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('.glitch').css('opacity','0.1');
     }, 3000);
  
-});*/
+});
 
 document.addEventListener('DOMContentLoaded', init, false);
 function init(){
