@@ -43,6 +43,16 @@ margin: 0;
 padding: 0;
 }
 
+#version{
+	position:fixed;
+	width:55px;
+	padding:5px;
+	top:0px;
+	left:0px;
+	background-color:#333;
+	border-bottom-right-radius:3px;
+}
+
 .background {
 position: absolute;
 display: block;
