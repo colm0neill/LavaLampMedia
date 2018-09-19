@@ -4,9 +4,11 @@ $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
         $('.glitch').css('opacity','0.1');
-    }, 3000);
+    }, 1000);
  
 });
+
+
 
 document.addEventListener('DOMContentLoaded', init, false);
 function init(){
@@ -20,9 +22,10 @@ $(document).ready(function(){
     });
 });
 
+//implementation of particles js. #functionallity currently off - 19/09/18
 var scene = document.getElementById('scene');
   var input = document.getElementById('scene-input');
-  // Pretty simple huh?
+  
   var parallax = new Parallax(scene, {
     hoverOnly: true,
     relativeInput: false,
@@ -51,7 +54,7 @@ window.onload = function() {
   ]
 });
 }
-
+//this function allows the nav-bar to know whether it has collapsed using the bootstrap function and adjusts.
 function myFunction() {
 	 var x = document.getElementById("myBtns").getAttribute("aria-expanded"); 
   if (x == "false") 
@@ -67,7 +70,7 @@ function myFunction() {
 	}
 
 }
-
+//Function removes the grey box on collapse reveals it when the screen resizes.
 function rmvGrey(){
 	console.log("got into resize");
 	var winWidth = window.innerWidth;

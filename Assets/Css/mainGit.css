@@ -1,36 +1,5 @@
 
-@media only screen and (max-width: 465px){
-	.navbar-brand-default img{
-		position:absolute;
-		left:-10px;
-		top:12px !Important;
-	}
-}
-@media only screen and (max-width: 992px){
-	.navbar-brand-default{
-		margin-top:0px;
-		padding-top:10px !Important;
-		padding-bottom:15px !Important;
-		padding-left:15px;
-		font-family: BondoniFLF !Important;
-		width:70%;
-		line-height:40px !Important;
-		margin-left:50px;
-		text-align:left;
-		
-	}
-	.navbar-brand-default img{
-		width:100px;
-		height:100px;
-		position:absolute;
-		left:-10px;
-		top:0px;
-	}
-	
-	.menuBtn{
-		margin-top:23px !Important;*/
-	}
-}
+
 
 @font-face {
 font-family: BondoniFLF;
@@ -49,7 +18,7 @@ padding: 0;
 	padding:5px;
 	top:0px;
 	left:0px;
-	background-color:#333;
+	background-color:#ccc;
 	border-bottom-right-radius:3px;
 }
 
@@ -206,8 +175,10 @@ color:black;
 padding-top: 24px;
 padding-bottom:30px;
 font-family: BondoniFLF;
-font-size:38px;
-line-height:100px;
+font-size:72px;
+line-height:185px;
+height:250px;
+text-align:left;
 
 }
 
@@ -339,7 +310,7 @@ transition: .5s ease-in-out;
 }
 
 .navbar-nav>li>a{
-font-size:20px;
+font-size:34px;
 color: #9d9d9d;
 text-align: center;
 padding-top: 30px;
@@ -371,6 +342,10 @@ margin:30px;
   height:1330px;
   
 }
+ 
+.carousel-inner{
+	background-color:rgba(50,50,50,0.4);
+} 
 
 /* Content Area */
 .selector:hover{
@@ -414,5 +389,57 @@ margin:30px;
 	text-decoration:none;
 	color:#55bdd4;
 }
+
+
+@media only screen and (max-width: 1490px){
+	.navbar-brand-default{
+		margin-top:0px;
+		padding-top:20px !Important;
+		padding-bottom:15px !Important;
+		padding-left:15px;
+		font-family: BondoniFLF !Important;
+		width:48%;
+		height:150px;
+		font-size: 55px;
+		line-height:110px !Important;
+		margin-left:50px;
+		text-align:left;
+		
+	}
+	.navbar-brand-default img{
+		width:90px;
+		height:90px;
+		position:absolute;
+		left:-10px;
+		top:33px;
+	}
+	.navbar-nav>li>a{
+		font-size: 20px !Important;
+	}
+	
+	.menuBtn{
+		margin-top:23px !Important;*/
+	}
 }
 
+@media only screen and (max-width: 990px){
+	.navbar-brand-default{
+		width:65%;
+	}
+
+@media only screen and (max-width:793px){
+	.navbar-brand-default img{
+		position:absolute;
+		left:-10px;
+		top:12px !Important;
+		
+		
+	}
+	.navbar-brand-default{
+		font-size: 30px !Important;
+		line-height: 60px  !Important;
+		height:100px;
+		width:65%;
+	}
+}
+/*page breaks at 334px collapseing upon itself.
