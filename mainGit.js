@@ -1,14 +1,44 @@
-
-
-$(document).ready(function() {
- 
-    setTimeout(function(){
-        $('body').addClass('loaded');
-        $('.glitch').css('opacity','0.1');
-    }, 900);
- 
+var theGame= "";
+document.addEventListener('keypress', (event) => {
+  const keyName = event.key;
+  
+  if(keyName =="w"){
+	theGame+=keyName;
+	}
+	 if(keyName =="a"){
+	theGame+=keyName;
+  }
+   if(keyName =="s"){
+	theGame+=keyName;
+  }
+   if(keyName =="d"){
+	theGame+=keyName;
+  }
+  if(theGame == "wasd"){
+  console.log("The game is a foot, ready on "+theGame);
+  }
 });
+$(document).ready(function () {
+    if(window.location.href.indexOf("index") > -1) {
+       console.log("Alert: home page be-yatch!");
 
+ 
+			setTimeout(function(){
+				$('body').addClass('loaded');
+				$('.glitch').css('opacity','0.1');
+			}, 3000);
+	
+
+	}
+else{
+ 
+			setTimeout(function(){
+				$('body').addClass('loaded');
+				$('.glitch').css('opacity','0.1');
+			}, 1000);
+
+}
+});
 
 document.addEventListener('DOMContentLoaded', init, false);
 function init(){

@@ -46,7 +46,7 @@ font-family: 'Oswald', sans-serif;
 #loader-wrapper .loader-section {
     position: fixed;
     top: 0;
-    width: 51%;
+    width: 50%;
     height: 100%;
     background:#fff;
     z-index: 1000;
@@ -59,6 +59,7 @@ font-family: 'Oswald', sans-serif;
 #loader-wrapper .loader-section.section-right {
     right: 0;
 }
+
 
 #loader {
     z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
@@ -96,10 +97,11 @@ h1 {
 
 
 .glitch {
-
+  margin-top:20%;
   position: relative;
   font-size:40px;
-  letter-spacing:100px;
+  letter-spacing:50px;
+  
   
 }
 .glitch::before,
@@ -109,21 +111,23 @@ h1 {
   color:black;
   left:0;
   top:0;
-  width: 100%;
+  width:100%;
   height: 100%;
+  letter-spacing:50px;
 }
 
 .glitch::before {
   /* ... anything needed to make it identical */
- 
-	font-size:40px;
-  letter-spacing:100px;
+  font-size:40px;
+  letter-spacing:50px;
   left: 0;
   top:0;
+  width: 100%;
+  height: 100%;
   /* variation */
   left: 2px;
   text-shadow: -1px 0 blue;
-  
+
   /* important: opaque background masks the original */
   background: white;
   animation: glitch-anim 2s infinite linear alternate-reverse;
@@ -131,37 +135,39 @@ h1 {
 .glitch::after {
   /* ... anything needed to make it identical */
   
-font-size:40px;
-  letter-spacing:100px;
+  font-size:40px;
+  letter-spacing:50px;
   left: 0;
   top:0;
+  width: 100%;
+  height: 100%;
   /* variation */
   left: -2px;
   text-shadow: -1px 0 grey;
   
   /* important: opaque background masks the original */
   background: white;
-   animation: glitch-anim 2s infinite linear alternate-reverse;
+   animation: glitch-anim 2s infinite linear ;
 }
 
 @keyframes glitch-anim {
   0% {
-    clip: rect(70px, 450px, 76px, 0);
+    clip: rect(20px, 1400px, 76px, 0);
   }
   20% {
-    clip: rect(29px, 450px, 16px, 0);
+    clip: rect(29px, 1400px, 16px, 0);
   }
   40% {
-    clip: rect(76px, 450px, 3px, 0);
+    clip: rect(26px, 1400px, 3px, 0);
   }
   60% {
-    clip: rect(42px, 450px, 78px, 0);
+    clip: rect(42px, 1200px, 78px, 0);
   }
   80% {
-    clip: rect(15px, 450px, 13px, 0);
+    clip: rect(15px, 1400px, 13px, 0);
   }
   100% {
-    clip: rect(53px, 450px, 5px, 0);
+    clip: rect(13px, 1400px, 5px, 0);
   }
 }
 
@@ -338,8 +344,8 @@ margin:30px;
 }
 
 .carousel-item img {
- width: 100%;
-height: 1000px;
+max-width:2200px;
+width:100%;
 display: block;
 margin: 0 auto;
 overflow: hidden;
@@ -357,9 +363,11 @@ overflow: hidden;
 	height:30px;
 	}
  
-.carousel-inner{
-	background-color:rgba(50,50,50,0.0);
-} 
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
 
 /* Content Area */
 .selector:hover{
