@@ -4,7 +4,7 @@ $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
         $('.glitch').css('opacity','0.1');
-    }, 1000);
+    }, 18000);
  
 });
 
