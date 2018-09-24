@@ -1,13 +1,13 @@
 
+
 $(document).ready(function() {
  
     setTimeout(function(){
         $('body').addClass('loaded');
         $('.glitch').css('opacity','0.1');
-    }, 18000);
+    }, 900);
  
 });
-
 
 
 document.addEventListener('DOMContentLoaded', init, false);
