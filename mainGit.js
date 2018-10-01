@@ -2,6 +2,7 @@ var theGame= "";
 document.addEventListener('keypress', (event) => {
   const keyName = event.key;
   
+  if(theGame.length !==4){
   if(keyName =="w"){
 	theGame+=keyName;
 	}
@@ -16,7 +17,14 @@ document.addEventListener('keypress', (event) => {
   }
   if(theGame == "wasd"){
   console.log("The game is a foot, ready on "+theGame);
+  theGame="";
   }
+  
+  console.log("the chars "+theGame);
+}
+else{
+	theGame="";
+}
 });
 $(document).ready(function () {
     if(window.location.href.indexOf("index") > -1) {
@@ -55,16 +63,16 @@ $(document).ready(function(){
 //implementation of particles js. #functionallity currently off - 19/09/18
 var scene = document.getElementById('scene');
   var input = document.getElementById('scene-input');
-  
+ if (scene !== null){ 
   var parallax = new Parallax(scene, {
     hoverOnly: true,
     relativeInput: false,
 	friction: .1,
   });
-
+ }
 window.onload = function() {
   Particles.init({
-    selector: '.background',
+  selector: ['.background','.background1'],
 	maxParticles: 130,
 	speed: .5,
 	sizeVariations: 5,
