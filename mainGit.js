@@ -1,12 +1,4 @@
-function setCookie(cname, timesLoaded, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (1*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + timesLoaded + ";" + expires + ";path=/;";
-	console.log("cookie saved");
-	}
 
-var cname="TimesLoaded";
 var theGame= "";
 var timesLoaded = 0;
 document.addEventListener('keypress', (event) => {
@@ -38,7 +30,7 @@ else{
 });
 $(document).ready(function () {
     if((window.location.href.indexOf("index") > -1)&&(timesLoaded == 0)) {
-       console.log("Alert: home page be-yatch!");
+      
 
  
 			setTimeout(function(){
@@ -47,8 +39,8 @@ $(document).ready(function () {
 			}, 3000);
 	
 		timesLoaded++;
-		setCookie();
-		console.log("You reloaded the homepage " + timesLoaded);
+		
+		console.log("The homepage has been loaded " + timesLoaded +" times.");
 	}
 else{
  
