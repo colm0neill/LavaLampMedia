@@ -2,7 +2,7 @@ function setCookie(cname, timesLoaded, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (1*60*60*1000));
     var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + timesLoaded + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + timesLoaded + ";" + expires + ";path=/;";
 	console.log("cookie saved");
 	}
 
