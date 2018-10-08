@@ -335,8 +335,8 @@ color:white;
 }
 
 .btn{
-	float:right;
-	margin:30px 50px;
+	
+	margin:30px 00px;
 	background-color:rgba(0,0,0,0.0);
 	padding:10px 30px;
 	color:white;
@@ -385,6 +385,7 @@ overflow: hidden;
   display: block;
 }
 
+
 /* Content Area */
 .selector:hover{
 	width: 200% !Important;
@@ -392,6 +393,26 @@ overflow: hidden;
 	font-size: 3em;
 	
 }
+
+#letters1{
+	max-width:260px;
+	Height:300px;
+	width:100%;
+}
+#letters2{
+	max-width:260px;
+	Height:300px;
+	width:100%;
+}
+#letters3{
+	max-width:260px;
+	Height:300px;
+	width:100%;
+}
+
+
+
+
 
 /*WEB DESIGN*/
 .llmBox{
@@ -401,6 +422,8 @@ overflow: hidden;
 	height:100%;
 	
 }
+
+
 
 .thex{
 	height:500px;

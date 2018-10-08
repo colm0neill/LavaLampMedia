@@ -127,7 +127,17 @@ function rmvGrey(){
 	}
 }
 
-
+ function function5(id){
+	 var letters = "";
+	 letters = id;
+	 console.log(letters);
+ new Vivus(letters, {duration: 200}, function() {
+      $('#tletter').attr('style', 'fill:black')
+      $('#hletter').attr('style', 'fill:black')
+    });
+	
+	
+	}
 
 /*function myFunction(){
 
