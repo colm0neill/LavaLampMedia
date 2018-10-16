@@ -126,19 +126,50 @@ function rmvGrey(){
 		document.getElementById("collapsibleNavbar").style.background = "rgba(111,111,111,0.8)";
 	}
 }
+var allClick = ["letters1","letters2","letters3"];
 
  function function5(id){
 	 var letters = "";
+ 
 	 letters = id;
+
 	 console.log(letters);
+	 	 if(letters !== "loadAnmi"){
  new Vivus(letters, {duration: 200}, function() {
       $('#tletter').attr('style', 'fill:black')
       $('#hletter').attr('style', 'fill:black')
     });
-	
+}
+
+	if(letters == "loadAnmi"){
+
+	for(i = 0; i < allClick.length;i++){
+		
+		new Vivus(allClick[i], {duration: 200}, function() {
+		$('#tletter').attr('style', 'fill:black')
+		$('#hletter').attr('style', 'fill:black')
+		});
+	}
+	}
 	
 	}
 
+	window.addEventListener('scroll', function(){
+  var place = document.body.scrollTop;
+  var alertOn = document.getElementById('capesContainer').offsetTop;
+  if(place > alertOn){
+    	for(i = 0; i < 3 ;i++){
+		new Vivus(allClick[i], {duration: 200}, function() {
+		$('#tletter').attr('style', 'fill:black')
+		$('#hletter').attr('style', 'fill:black')
+		});
+		
+		}
+		this.removeEventListener('scroll', arguments.callee, false);
+  }
+});
+	
+	
 /*function myFunction(){
 
 	if (mop !== 1){
