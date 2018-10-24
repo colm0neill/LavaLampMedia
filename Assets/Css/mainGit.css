@@ -28,16 +28,20 @@ display: block;
 top: 0;
 left: 0;
 z-index: -10;
+
 }
 
 canvas.background{
-margin-top:130px;
+margin-top:00px;
 display:block;
+height:93% !Important;
 }
+
 
 canvas.background1{
 margin-top:130px;
 display:block;
+
 }
 
 body{
@@ -347,16 +351,18 @@ color:white;
 .ipsum{
 position:relative;
 background-color:rgba(50,50,50,0.8);
-margin:30px;
+margin:0px;
 }
 .layer1{
 	padding-left:20%;
 	opacity:.6;
+	filter: blur(2px);
 }
 
 .layer2{
 	padding-left:20%;
 	opacity:.9;
+	
 }
 
 .carousel-item img {
@@ -485,6 +491,9 @@ overflow: hidden;
 	text-decoration:none;
 	color:#55bdd4;
 }
+.footer-copyright{
+	background-color:white;
+}
 
 
 @media only screen and (max-width: 1490px){
@@ -516,6 +525,8 @@ overflow: hidden;
 	.menuBtn{
 		margin-top:23px !Important;*/
 	}
+	
+	
 }
 
 @media only screen and (max-width: 990px){
@@ -537,5 +548,7 @@ overflow: hidden;
 		height:100px;
 		width:65%;
 	}
+	
+
 }
 /*page breaks at 334px collapseing upon itself.

@@ -28,6 +28,12 @@ else{
 	theGame="";
 }
 });
+
+window.addEventListener('scroll', function(){
+	window.scrollTo(0,300);
+});
+
+
 $(document).ready(function () {
     if((window.location.href.indexOf("index") > -1)&&(timesLoaded == 0)) {
       
@@ -70,7 +76,10 @@ var scene = document.getElementById('scene');
  if (scene !== null){ 
   var parallax = new Parallax(scene, {
     hoverOnly: true,
-    relativeInput: false,
+	 scalarX: 15,
+	 scalarY: 15,	 
+	 clipRelativeInput: true,
+    relativeInput: true,
 	friction: .1,
   });
  }
@@ -144,7 +153,7 @@ var allClick = ["letters1","letters2","letters3"];
 	if(letters == "loadAnmi"){
 
 	for(i = 0; i < allClick.length;i++){
-		
+
 		new Vivus(allClick[i], {duration: 200}, function() {
 		$('#tletter').attr('style', 'fill:black')
 		$('#hletter').attr('style', 'fill:black')
