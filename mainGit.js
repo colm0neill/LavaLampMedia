@@ -1,4 +1,34 @@
+/* Smooth Scrolling
 
+*/
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+/*---------------End Of Scroll Smoothing------------------*/
+
+/*---------------Game Launching Listener------------------*/
 var theGame= "";
 var timesLoaded = 0;
 document.addEventListener('keypress', (event) => {
@@ -29,7 +59,7 @@ else{
 }
 });
 
-
+/*---------------End of Launching Listener------------------*/
 
 
 $(document).ready(function () {
@@ -152,7 +182,7 @@ var allClick = ["letters1","letters2","letters3"];
 
 	for(i = 0; i < allClick.length;i++){
 
-		new Vivus(allClick[i], {duration: 200}, function() {
+		new Vivus(allClick[i], {duration: 250}, function() {
 		$('#tletter').attr('style', 'fill:black')
 		$('#hletter').attr('style', 'fill:black')
 		});

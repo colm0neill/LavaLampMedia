@@ -23,7 +23,8 @@ Lava Lamp Media
 <link rel="icon" href="Assets/Images/favicon-64.png" type="image/gif" sizes="64X64"><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
+<!-- Pixi JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
@@ -34,6 +35,7 @@ Lava Lamp Media
 <!--<link rel="stylesheet" type="text/css" href="Assets/Css/output.css">
 <link rel="stylesheet" type="text/css" href="Assets/Css/testing.css">-->
 <script type="text/javascript" src='mainGit.js'></script>
+<script type="text/javascript" src='pixis.js'></script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar navbar-inverse" data-offset="50">
@@ -99,24 +101,19 @@ Lava Lamp Media
 
 </header>
 <div class="ipsum">
-	<div class="row w-100">
-		<div class="col-md-7">
+	<div class="row">
+		<div class="col-md-12">
 		
-			<div class="container welcome ">
+			<div class="container welcome text-center py-5">
 			</br>
-			<h3>Welcome to Lava Lamp Media</h3>
-			<h1>We Help Brands & Businesses Gain a Competitive Advantage in the Connected World. </h1><!--taken from Blind.com's site as placeholder because i like what they do. :);-->
-			<a class="btn" id="loadAnmi" href="#capes" onclick="function5(this.id)"> See What We Can Do.</a>
+			<h3>It's time to</h3>
+			<h1>START</h1><!--taken from Blind.com's site as placeholder because i like what they do. :);-->
+			<a class="btn" id="loadAnmi" href="#capes" onclick="function5(this.id)"><img src="Assets/Images/Arrow.png" width="20%"/></a>
 			</div>
 		</div>
 	
 	
-		<div class="paraLamp col-md-5 mt-3 ">
-			<div id="scene">
-				<div class="layer1" data-depth="0.2"><img src="Assets/Images/paralamp2.png" width="230px" height="500px"/><//></div>
-				<div class="layer2" data-depth="0.5"><img src="Assets/Images/paralamp3.png" width="230px" height="500px"/></div>
-			</div>
-		</div>
+	
 	
 </div>
 
@@ -155,9 +152,9 @@ Lava Lamp Media
 	</div>
 	
 	
-<div class="row w-98 m-3">   
+<div class="row m-3 ">   
 <div class="col-sm m-3" align="center">
-  <svg onclick="function5(this.id)" id="letters1" width="100%" height="100%" viewBox="-15 0 410 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+  <svg onclick="function5(this.id)" id="letters1" viewBox="-15 0 410 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
 	<g id="Layer_1">
 			<path fill="none" stroke="#000000" stroke-width="29" stroke-linecap="round" stroke-linejoin="round" d="M566.167,452.668"/>
 		</g>
@@ -212,38 +209,13 @@ Lava Lamp Media
 			</g>
 			</g>
   </svg>
-		<p class="text-left my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis feugiat eros, 
-		sit amet accumsan diam molestie in. Integer quis metus purus. Mauris commodo, metus ut bibendum 
-		tempor, velit ex porttitor ipsum, sed iaculis turpis dolor sed neque. Ut faucibus tincidunt lorem
-		at fringilla. Sed porta egestas leo. Duis vehicula, nunc a sollicitudin cursus, dui augue varius 
-		odio, vel euismod lacus diam ut elit. Phasellus mi dolor, tempor quis augue at, blandit tempor augue.
-		</p>
+		<p class="text-left my-4">Our mission is to create invisible design that 
+		works for you and communicates your message.</p>
 </div>
  
 <div class="col-sm m-3" align="center">
-  <svg onclick="function5(this.id)" id="letters2" width="100%" height="100%" viewBox="110 90 580 580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-     <g id="Layer_1">
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="142.1914" y1="145.6182" x2="660.3301" y2="145.6182">
-				<stop  offset="0" style="stop-color:#D600FF"/>
-				<stop  offset="1" style="stop-color:#00CEE2"/>
-			</linearGradient>
-			<path style="fill:none;stroke:url(#SVGID_1_);stroke-width:6.7934;" d="M155.438,107.403v76.317h-9.851v-76.317H155.438z
-				 M184.197,108.422c6-0.906,13.135-1.585,20.948-1.585c14.154,0,24.231,3.284,30.912,9.512
-				c6.793,6.228,10.756,15.06,10.756,27.402c0,12.456-3.85,22.646-10.983,29.667c-7.134,7.133-18.91,10.983-33.743,10.983
-				c-7.02,0-12.908-0.34-17.89-0.906V108.422z M194.047,175.908c2.491,0.453,6.115,0.566,9.965,0.566
-				c21.06,0,32.497-11.776,32.497-32.384c0.114-18.004-10.078-29.44-30.912-29.44c-5.095,0-8.945,0.453-11.549,1.02V175.908z
-				 M310.668,147.939h-29.666v27.515h33.064v8.266h-42.915v-76.317h41.216v8.266h-31.366v24.118h29.666V147.939z M338.405,183.72
-				v-76.317h10.757l24.457,38.611c5.662,8.946,10.078,16.985,13.702,24.798l0.226-0.113c-0.906-10.191-1.133-19.476-1.133-31.365
-				v-31.931h9.286v76.317h-9.965l-24.231-38.725c-5.322-8.493-10.417-17.211-14.267-25.477l-0.339,0.113
-				c0.566,9.625,0.792,18.796,0.792,31.478v32.61H338.405z M438.947,115.782h-23.212v-8.379h56.501v8.379h-23.325v67.938h-9.964
-				V115.782z M502.125,107.403v76.317h-9.851v-76.317H502.125z M545.377,115.782h-23.214v-8.379h56.504v8.379h-23.326v67.938h-9.964
-				V115.782z M618.858,183.72v-32.384l-24.119-43.934h11.21l10.758,21.061c2.944,5.775,5.209,10.417,7.586,15.739h0.227
-				c2.151-4.982,4.756-9.964,7.699-15.739l10.983-21.061h11.21l-25.591,43.82v32.497H618.858z"/>
-			<g>
-			</g>
-		</g>
-		<g id="Layer_2">
-		</g>
+  <svg onclick="function5(this.id)" id="letters2" viewBox="110 90 580 580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    
 		<g id="Layer_3">
 			<g>
 				<path style="fill:none;stroke:#00FFFF;stroke-width:18.1158;stroke-linecap:round;" d="M400,460.557"/>
@@ -305,19 +277,34 @@ Lava Lamp Media
 				
 				<circle style="fill:none;stroke:url(#SVGID_8_);stroke-width:18.1158;stroke-linecap:round;" cx="400" cy="460.556" r="234.938"/>
 			</g>
-			
+			 <g id="Layer_1">
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="142.1914" y1="145.6182" x2="660.3301" y2="145.6182">
+				<stop  offset="0" style="stop-color:#D600FF"/>
+				<stop  offset="1" style="stop-color:#00CEE2"/>
+			</linearGradient>
+			<path style="fill:none;stroke:url(#SVGID_1_);stroke-width:6.7934;" d="M155.438,107.403v76.317h-9.851v-76.317H155.438z
+				 M184.197,108.422c6-0.906,13.135-1.585,20.948-1.585c14.154,0,24.231,3.284,30.912,9.512
+				c6.793,6.228,10.756,15.06,10.756,27.402c0,12.456-3.85,22.646-10.983,29.667c-7.134,7.133-18.91,10.983-33.743,10.983
+				c-7.02,0-12.908-0.34-17.89-0.906V108.422z M194.047,175.908c2.491,0.453,6.115,0.566,9.965,0.566
+				c21.06,0,32.497-11.776,32.497-32.384c0.114-18.004-10.078-29.44-30.912-29.44c-5.095,0-8.945,0.453-11.549,1.02V175.908z
+				 M310.668,147.939h-29.666v27.515h33.064v8.266h-42.915v-76.317h41.216v8.266h-31.366v24.118h29.666V147.939z M338.405,183.72
+				v-76.317h10.757l24.457,38.611c5.662,8.946,10.078,16.985,13.702,24.798l0.226-0.113c-0.906-10.191-1.133-19.476-1.133-31.365
+				v-31.931h9.286v76.317h-9.965l-24.231-38.725c-5.322-8.493-10.417-17.211-14.267-25.477l-0.339,0.113
+				c0.566,9.625,0.792,18.796,0.792,31.478v32.61H338.405z M438.947,115.782h-23.212v-8.379h56.501v8.379h-23.325v67.938h-9.964
+				V115.782z M502.125,107.403v76.317h-9.851v-76.317H502.125z M545.377,115.782h-23.214v-8.379h56.504v8.379h-23.326v67.938h-9.964
+				V115.782z M618.858,183.72v-32.384l-24.119-43.934h11.21l10.758,21.061c2.944,5.775,5.209,10.417,7.586,15.739h0.227
+				c2.151-4.982,4.756-9.964,7.699-15.739l10.983-21.061h11.21l-25.591,43.82v32.497H618.858z"/>
+			<g>
+			</g>
+		</g>
 			</g>
 		</svg>
-		<p  class="text-left my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis feugiat eros, 
-		sit amet accumsan diam molestie in. Integer quis metus purus. Mauris commodo, metus ut bibendum 
-		tempor, velit ex porttitor ipsum, sed iaculis turpis dolor sed neque. Ut faucibus tincidunt lorem
-		at fringilla. Sed porta egestas leo. Duis vehicula, nunc a sollicitudin cursus, dui augue varius 
-		odio, vel euismod lacus diam ut elit. Phasellus mi dolor, tempor quis augue at, blandit tempor augue.
-		</p>
+		<p  class="text-left my-4">We create unique media and stratiges that allow
+		people to know who you are and what you're about.</p>
 	</div>
 
 <div class="col-sm m-3" align="center">
-  <svg onclick="function5(this.id)" id="letters3" width="100%" height="100%" viewBox="85 80 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+  <svg onclick="function5(this.id)" id="letters3" viewBox="85 80 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
 		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="652.6748" y1="729.1748" x2="147.3255" y2="223.8255">
 			<stop  offset="0" style="stop-color:#4053D4"/>
 			<stop  offset="1" style="stop-color:#BD4264"/>
@@ -370,12 +357,8 @@ Lava Lamp Media
 			</g>
 		</svg>
   
-		<p class="text-left my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis feugiat eros, 
-		sit amet accumsan diam molestie in. Integer quis metus purus. Mauris commodo, metus ut bibendum 
-		tempor, velit ex porttitor ipsum, sed iaculis turpis dolor sed neque. Ut faucibus tincidunt lorem
-		at fringilla. Sed porta egestas leo. Duis vehicula, nunc a sollicitudin cursus, dui augue varius 
-		odio, vel euismod lacus diam ut elit. Phasellus mi dolor, tempor quis augue at, blandit tempor augue.
-		</p>
+		<p class="text-left my-4">To have systems in place so that you can scale, 
+		grow and break down your barriers.</p>
   
 	</div>
   </div>
