@@ -114,10 +114,10 @@ var scene = document.getElementById('scene');
 window.onload = function() {
   Particles.init({
   selector: ['.background','.background1'],
-	maxParticles: 130,
-	speed: .5,
-	sizeVariations: 5,
-	minDistance: 120,
+	maxParticles: 200,
+	speed: .9,
+	sizeVariations: 7,
+	minDistance: 190,
 	color: ['#cc0670', '#aaaaaa', '#55bdd4'],
     connectParticles: true,
 	
@@ -126,7 +126,7 @@ window.onload = function() {
     {
       breakpoint: 992,
       options: {
-        maxParticles: 80,
+        maxParticles: 100,
         connectParticles: false
      }
     }
@@ -164,9 +164,9 @@ function rmvGrey(){
 	}
 }
 var allClick = ["letters1","letters2","letters3"];
-
- function function5(id){
 	 var letters = "";
+ function function5(id){
+
  
 	 letters = id;
 
@@ -186,25 +186,13 @@ var allClick = ["letters1","letters2","letters3"];
 		$('#tletter').attr('style', 'fill:black')
 		$('#hletter').attr('style', 'fill:black')
 		});
+		letters="";
 	}
 	}
 	
 	}
+	
 
-	window.addEventListener('scroll', function(){
-  var place = document.body.scrollTop;
-  var alertOn = document.getElementById('capesContainer').offsetTop;
-  if(place > alertOn){
-    	for(i = 0; i < 3 ;i++){
-		new Vivus(allClick[i], {duration: 200}, function() {
-		$('#tletter').attr('style', 'fill:black')
-		$('#hletter').attr('style', 'fill:black')
-		});
-		
-		}
-		this.removeEventListener('scroll', arguments.callee, false);
-  }
-});
 	
 	
 /*function myFunction(){

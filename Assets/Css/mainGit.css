@@ -333,8 +333,8 @@ padding-bottom:30px;
 }
 
 .welcome{
-	
-
+	margin-top:100px;
+	margin-bottom:100px;
 	padding-right:0px;
 color:white;	
 }
@@ -422,8 +422,8 @@ overflow: hidden;
 }
 
 #capesContainer{
-	padding-left:200px;
-	padding-right:200px;
+	padding-left:400px;
+	padding-right:400px;
 }
 
 #capesContainer p{
@@ -432,6 +432,9 @@ overflow: hidden;
 	text-align:center;
 	
 	
+}
+#capesContainer .col{
+	width:170px;
 }
 
 #letters1{
@@ -527,6 +530,10 @@ overflow: hidden;
 
 
 @media only screen and (max-width: 1490px){
+	#capesContainer{
+	padding-left:0px;
+	padding-right:0px;
+}
 	.navbar-brand-default{
 		margin-top:0px;
 		padding-top:20px !Important;
