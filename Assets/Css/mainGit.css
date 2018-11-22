@@ -363,24 +363,7 @@ position:relative;
 background-color:rgba(50,50,50,0.8);
 margin:0px;
 }
-.layer1{
-	padding-left:20%;
-	opacity:.6;
-	filter: blur(2px);
-}
 
-.layer2{
-	padding-left:20%;
-	opacity:.9;
-	
-}
-
-#display canvas{
-	position:relative;
-	top:80px;
-	left:150px;
-	
-}
 
 .carousel-item img {
 max-width:2200px;
@@ -418,7 +401,8 @@ overflow: hidden;
 }
 
 #capes{
-	font-size:45px;
+	font-size:50px;
+	color:white;
 }
 
 #capesContainer{
@@ -433,6 +417,16 @@ overflow: hidden;
 	
 	
 }
+ .picsandtext{
+	 padding-top:150px;
+	 padding-bottom:150px;
+ }
+ .capeImg{
+	 margin:20px;
+	 background-color:rgba(255,255,255,0.4);
+	 border-radius:10px;
+ }
+
 #capesContainer .col{
 	width:170px;
 }
@@ -481,9 +475,45 @@ overflow: hidden;
 	font-size:80px;
 	letter-spacing:15px;
 }
+/*.paraLamp{
+	padding:0px;
+}*/
+#scene div{
+	position:absolute;
+	padding:100px;
+}
 
+.layer1{
+	padding-left:20%;
+	opacity:.6;
+	filter: blur(2px);
+}
 
+.layer2{
+	padding-left:20%;
+	opacity:.9;
+	
+}
 
+#display canvas{
+margin-top:80px;
+margin-left:100px;
+}
+#whoWhereWhat{
+	background-color:#fff;
+	padding:150px 20% 150px 20%;
+	margin:0px;
+	
+}
+#whoWhereWhat h2{
+	font-family:BondoniFLF;
+	letter-spacing: 5px;
+	
+
+}
+#whoWhereWhat p{
+	font-size:20px;
+}
 
 /*WEB DESIGN*/
 

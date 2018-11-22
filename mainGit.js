@@ -91,6 +91,7 @@ function init(){
 document.getElementById("myBtns").addEventListener("click", myFunction,);
 
 window.addEventListener("resize", rmvGrey);
+window.addEventListener("resize", changeSvg);
 
 $(document).ready(function(){
     $('.animated-icon1').click(function(){
@@ -162,7 +163,21 @@ function rmvGrey(){
 	else{
 		document.getElementById("collapsibleNavbar").style.background = "rgba(111,111,111,0.8)";
 	}
+	
+	
 }
+
+function changeSvg (){
+	var winWidth = window.innerWidth;
+	var xWidth = document.getElementById("svgLinez").firstChild;
+	
+	// Set the colour to something else
+	xWidth.setAttribute("x1", winWidth);
+	
+	console.log("foo ");
+}
+
+
 var allClick = ["letters1","letters2","letters3"];
 	 var letters = "";
  function function5(id){
