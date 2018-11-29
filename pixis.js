@@ -10,7 +10,7 @@ setTimeout(function(){let type = "WebGL"
 	var renderer = PIXI.autoDetectRenderer(260,336,{
 	transparent:true,
 	resolution:1,
-	forceCanvas:true
+	forceCanvas:false
 	});
 	
 	document.getElementById('display').appendChild(renderer.view);
