@@ -463,8 +463,18 @@ overflow: hidden;
 	height:100%;
 	
 }
-#title1{
 
+#scene{
+	position:relative;
+	top:-125px;
+}
+#buttonBoss{
+position:relative;
+top:-280px;
+}
+
+#title1{
+content: attr(data-text);
 right:0;
 left:0;
 margin-right:auto;
@@ -476,7 +486,7 @@ right:0;
 left:0;
 margin-right:auto;
 margin-left:auto;
-top:-100px;
+top:-350px;
 }
 .webT{
 	font-size:110px;
@@ -548,7 +558,7 @@ transition:color 2s ease;
 	letter-spacing:15px;
 }
 .paraLamp{
-	
+height:1010;	
 }
 #scene div{
 	position:absolute;
@@ -568,9 +578,14 @@ transition:color 2s ease;
 }
 
 #display canvas{
-margin-top:80px;
+margin-top:120px;
 margin-left:100px;
 }
+
+#scene img{
+	margin-top:80px;
+}
+
 #whoWhereWhat{
 	background-color:#fff;
 	padding:150px 20% 150px 20%;
