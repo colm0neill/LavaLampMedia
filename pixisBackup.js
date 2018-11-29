@@ -23,31 +23,28 @@ setTimeout(function(){let type = "WebGL"
 	.load(setup);
 	
 
-	var sprite;
+	var tiger;
 	
 
 	function setup(){
-	stage.interactive = true;
+		tiger = new PIXI.Sprite(
+		PIXI.loader.resources["Assets/Images/Tiger5Row-01.png"].texture
+		);
+	stage.addChild(tiger);
+	animationLoop();
 	
-	var rect = new PIXI.Rectangle(0,0,+260,+336);
-	var texture =PIXI.loader.resources["Assets/Images/Tiger5Row-01.png"].texture;
-
-	texture.frame = rect;
-
-var texture;
-	
-	sprite = new PIXI.Sprite(texture);
 	
 	var count = 0;
 	//console.log("i got in 2.");
 	var idle = setInterval(function(){
+		console.log("foo");
 		
+		
+		
+		
+		/*
 		if (rect.x >= 260 * 20) rect.x = 0;
-		if(rect.x !== 5200){
 		rect.x+=260;
-		//console.log("Count: "+count+" Rect x : "+rect.x);
-		}
-		
 		//console.log("Stage 1. x="+ rect.x+" y= "+rect.y+" Count=: "+count);
 		if (rect.x == 260*20){
 			
@@ -62,21 +59,15 @@ var texture;
 				rect.y = 0;
 				//console.log("Stage 4. x="+ rect.x+" y= "+rect.y+" Count=: "+count);
 				}
-		    if(rect.x == 5200){
-			var kill = 5200;
-			var z = rect.x - kill;
-			rect.x = z;
-			//console.log("The Rect: "+rect.x);
-		}
+		    
 		 }
-		
-		
+			
 			
 		sprite.texture.frame = rect;
+	
+		*/
 		
-		
-		
-	},120);
+	},4000);
 		
 		
 		sprite.scale.set(1, 1);
@@ -94,3 +85,4 @@ var texture;
 		renderer.render(stage);
 	}
 },1000);
+		

@@ -1,6 +1,6 @@
-/* Smooth Scrolling
 
-*/
+
+/* Smooth Scrolling*/
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -61,7 +61,7 @@ else{
 
 /*---------------End of Launching Listener------------------*/
 
-
+/*---------------Start of glitch Loader------------------*/
 $(document).ready(function () {
     if((window.location.href.indexOf("index") > -1)&&(timesLoaded == 0)) {
       
@@ -85,6 +85,8 @@ else{
 
 }
 });
+/*---------------End of Glitch Loader------------------*/
+
 
 document.addEventListener('DOMContentLoaded', init, false);
 function init(){
@@ -92,6 +94,9 @@ document.getElementById("myBtns").addEventListener("click", myFunction,);
 
 window.addEventListener("resize", rmvGrey);
 window.addEventListener("resize", changeSvg);
+setTimeout(function (){
+	changeSvg();
+}),500;
 
 $(document).ready(function(){
     $('.animated-icon1').click(function(){
@@ -112,7 +117,9 @@ var scene = document.getElementById('scene');
 	friction: .1,
   });
  }
+ 
 window.onload = function() {
+
   Particles.init({
   selector: ['.background','.background1'],
 	maxParticles: 200,
@@ -150,9 +157,10 @@ function myFunction() {
 	}
 
 }
+/*---------------Start of resize Listener------------------*/
 //Function removes the grey box on collapse reveals it when the screen resizes.
 function rmvGrey(){
-	console.log("got into resize");
+	//console.log("got into resize");
 	var winWidth = window.innerWidth;
 	if (winWidth > 991){
 		
@@ -166,18 +174,71 @@ function rmvGrey(){
 	
 	
 }
+/*---------------End of resize Listener------------------*/
+
+
+
+
+/*---------------Start of SVG Line Modifier------------------*/
+
 
 function changeSvg (){
 	var winWidth = window.innerWidth;
-	var xWidth = document.getElementById("svgLinez").firstChild;
+	var winHeight = document.getElementById("paraLamp").clientHeight;
+	var svgLineOne = document.getElementById("svgLinez1");
+	var svgLineTwo = document.getElementById("svgLinez2");
 	
-	// Set the colour to something else
-	xWidth.setAttribute("x1", winWidth);
+	var newWidth = winWidth;
+	var oldWidth = 0;
+	var result1 = 0;
+	var divider = 25;
+	var result2 = 0;
+	var minOffset = 130;
+	var yOffSet = 0;
 	
-	console.log("foo ");
+	if(newWidth < 950){
+		
+		var x = Math.round(winWidth/100)*100;
+		var b = 1-(winWidth/1000);
+		minOffset += 150*b;
+		
+	}
+	
+	result1 = newWidth - oldWidth;
+	result2 = result1 / divider;
+	yOffSet = minOffset - result2;
+	
+	
+	var Line1x1 = winWidth;
+	var Line1y1 = 0;
+	var Line1x2 = (winWidth/2)+115;
+	var Line1y2 = (winHeight/2)-yOffSet;
+	
+	var Line2x1 = (winWidth/2)-115;
+	var Line2y1 = (winHeight/2)+yOffSet;
+	var Line2x2 = 0;
+	var Line2y2 = winHeight;
+	
+	
+	svgLineOne.setAttribute("x1",Line1x1);
+	svgLineOne.setAttribute("y1",Line1y1);
+	svgLineOne.setAttribute("x2",Line1x2);
+	svgLineOne.setAttribute("y2",Line1y2);
+	
+	svgLineTwo.setAttribute("x1",Line2x1);
+	svgLineTwo.setAttribute("y1",Line2y1);
+	svgLineTwo.setAttribute("x2",Line2x2);
+	svgLineTwo.setAttribute("y2",Line2y2);
+	
+	
+	
 }
 
+/*---------------End of SVG Line Modifier------------------*/
 
+
+
+/*---------------Start of SVG Animator ------------------*/
 var allClick = ["letters1","letters2","letters3"];
 	 var letters = "";
  function function5(id){
@@ -206,10 +267,22 @@ var allClick = ["letters1","letters2","letters3"];
 	}
 	
 	}
-	
+/*---------------End of SVG Animator ------------------*/	
 
-	
-	
+/*---------------Start Of Button Click------------------*/
+window.onload = function() {
+alert("Fool");
+ document.getElementById("likeWhat").addEventListener("mousedown", ButtonIn);
+}
+function ButtonIn(){
+	console.log("The Button was clicked");
+	var mainBtn = document.getElementsByClassName("btnBack")[0];
+	mainBtn.setAttribute("class","btnBackDo");
+}	
+
+/*---------------End Of Button Click------------------*/
+
+
 /*function myFunction(){
 
 	if (mop !== 1){
