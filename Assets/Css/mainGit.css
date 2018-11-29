@@ -463,7 +463,25 @@ overflow: hidden;
 	height:100%;
 	
 }
+#title1{
 
+right:0;
+left:0;
+margin-right:auto;
+margin-left:auto;
+top:100px;
+}
+#title2{
+right:0;
+left:0;
+margin-right:auto;
+margin-left:auto;
+top:-100px;
+}
+.webT{
+	font-size:110px;
+	
+}
 .btnBack{
 	position:relative;
 	top:30px;
@@ -529,12 +547,12 @@ transition:color 2s ease;
 	font-size:80px;
 	letter-spacing:15px;
 }
-/*.paraLamp{
-	padding:0px;
-}*/
+.paraLamp{
+	
+}
 #scene div{
 	position:absolute;
-	padding:100px;
+	padding:150px;
 }
 
 .layer1{

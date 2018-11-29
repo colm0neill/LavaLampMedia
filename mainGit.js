@@ -270,14 +270,18 @@ var allClick = ["letters1","letters2","letters3"];
 /*---------------End of SVG Animator ------------------*/	
 
 /*---------------Start Of Button Click------------------*/
-window.onload = function() {
-alert("Fool");
- document.getElementById("likeWhat").addEventListener("mousedown", ButtonIn);
-}
-function ButtonIn(){
-	console.log("The Button was clicked");
+
+
+
+function buttonIn(){
+
 	var mainBtn = document.getElementsByClassName("btnBack")[0];
 	mainBtn.setAttribute("class","btnBackDo");
+}	
+function buttonOut(){
+	
+	var mainBtn = document.getElementsByClassName("btnBackDo")[0];
+	mainBtn.setAttribute("class","btnBack");
 }	
 
 /*---------------End Of Button Click------------------*/
