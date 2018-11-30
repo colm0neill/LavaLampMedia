@@ -558,6 +558,7 @@ transition:color 2s ease;
 	letter-spacing:15px;
 }
 .paraLamp{
+margin-top:0px !Important;
 height:1010;	
 }
 #scene div{
@@ -715,6 +716,23 @@ margin-left:100px;
 	margin-left:5%;
 	overflow:hidden;
 }
+#display{
+left:0px;
+right:0px;
+margin-left:auto;
+margin-right:auto;
+padding-left:auto;
+padding-right:auto;
+
+}
+
+.webT{
+font-size:50px;
+}
+#title1{
+
+}
+
 .layer1{
 	padding-left:15% !Important;
 
