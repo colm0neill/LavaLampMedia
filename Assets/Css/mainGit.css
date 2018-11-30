@@ -729,8 +729,8 @@ padding-right:auto;
 .webT{
 font-size:50px;
 }
-#title1{
-
+#title2{
+top:-250px;
 }
 
 .layer1{
@@ -743,8 +743,33 @@ font-size:50px;
 
 	
 }
+#display canvas{
+position:relative;
+top:50px;
+left:-50px;
+padding-right:0px !Important;
+}
+
+#buttonBoss{
+top:-150px;
+}
+
 #scene{
 	overflow:hidden;
 }
+
+.btnBack{
+	position:relative;
+	top:54px;
+	height:60px;
+	
+}
+.btnBackDo{
+	position:relative;
+	top:54px;
+	height:60px;
+	
+}
+
 }
 /*page breaks at 334px collapseing upon itself.
