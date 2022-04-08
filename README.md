@@ -1,7 +1,7 @@
 # Bootstrap-Website
 It is my mission to create a bootstrap website that is both responsive in its layout and responsive in its design. 
 
-<a href="https://colm0neill.github.io/LavaLampMedia/">Go to site...</a>
+<a href="https://colm0neill.github.io/LavaLampMedia/" target="blank">Go to site...</a>
 
 Update v1.1
   It is seemingly quite difficult to implement librarys and have them run efficiently.
