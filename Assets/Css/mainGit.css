@@ -49,8 +49,8 @@ height:100%;
 /* canvas.background1{
 margin-top:230px;
 display:block;
- */
-}
+
+} */
 
 body{
 
@@ -410,16 +410,20 @@ overflow: hidden;
 }
 
 #capes{
+	padding-top:60px;
 	font-size:50px;
-	color:white;
+	color:black;
+	text-align: center;
 	font-family:BondoniFLF;
+	max-width: 100%;
 	
 }
 
 .capeImg:hover {
     transform: scale(1.5);
-	transition:all .5s ease-in-out;
+	transition:all .5s ease-out;
 	backdrop-filter: blur(4px);
+	background-color:rgba(50, 50, 50, 0.548);
     /* background-color: rgb(132 132 132); */
 	z-index:10;
 }
@@ -442,9 +446,14 @@ overflow: hidden;
 	 padding-bottom:150px;
  }
  .capeImg{
+	 transition:all .5s ease-out;
 	 padding-top:20px;
 	 background-color:rgba(50,50,50,0.4);
 	 border-radius:10px;
+	
+ }
+ .capeImg p{
+	text-align: center;
  }
 
 #capesContainer .col{
