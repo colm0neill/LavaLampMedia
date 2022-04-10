@@ -34,7 +34,7 @@ Lava Lamp Media
 <link rel="stylesheet" type="text/css" href="Assets/Css/mainGit.css">
 <!--<link rel="stylesheet" type="text/css" href="Assets/Css/output.css">
 <link rel="stylesheet" type="text/css" href="Assets/Css/testing.css">-->
-<script type="text/javascript" src='mainGit.js'></script>
+<script type="text/javascript" defer src='mainGit.js'></script>
 <script type="text/javascript" src='pixis.js'></script>
 
 </head>
@@ -341,8 +341,13 @@ Lava Lamp Media
     <!--CAPABILITIES Section End-->
   	
 	<!--Carousel Section-->
+	<div class="row ">
+	<div class="col-1">
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	</div>
+
+
+<div id="carouselExampleControls" class="carouselRow carousel slide col-10" data-ride="carousel">
 <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -367,7 +372,10 @@ Lava Lamp Media
 		<span class="sr-only">Next</span>
 	</a>
 </div>	
+<div class="col-1">
 
+</div>
+</div>
 		<!--Carousel Section End-->
 		
 <footer class="page-footer-default align-bottom">
@@ -416,5 +424,11 @@ Lava Lamp Media
 </div>
 
 <script src="path/to/particles.min.js"></script>
+<div class="game_overlay hidden">
+	<div class="row">
+		<div class="col-11 p-4"><h3>Wanna play a game???</h3></div>
+		<div id="closeG" class="col-1 text-center p-4">[ESC]</div>
+	</div>
+</div>
 </body>
 </html>

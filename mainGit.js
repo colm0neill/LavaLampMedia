@@ -49,6 +49,7 @@ document.addEventListener('keypress', (event) => {
   }
   if(theGame == "wasd"){
   console.log("The game is a foot, ready on "+theGame);
+  turnOnGame();
   theGame="";
   }
   
@@ -60,6 +61,25 @@ else{
 });
 
 /*---------------End of Launching Listener------------------*/
+
+/*---------------Start of the game ------------------*/
+function turnOnGame(){
+var overlay = document.querySelector(".game_overlay");
+overlay.classList.remove("hidden");
+overlay.classList.add("show");
+}
+
+
+
+
+document.getElementById("closeG").addEventListener('click', (event) => {
+ 
+    var overlay = document.querySelector(".game_overlay");
+    overlay.classList.remove("show");
+    overlay.classList.add("hidden"); 
+  
+});
+/*---------------End of the game ------------------*/
 
 /*---------------Start of glitch Loader------------------*/
 $(document).ready(function () {
