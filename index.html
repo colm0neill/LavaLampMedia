@@ -1,172 +1,190 @@
 <html>
 <title>
-Lava Lamp Media
+	Lava Lamp Media
 </title>
+
 <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-<!--Parallax.js for images -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<!--Particles.js for background -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-<!--Vivus.js for Svg Animations -->
-<script src="https:////cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+	<!--Parallax.js for images -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<!--Particles.js for background -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+	<!--Vivus.js for Svg Animations -->
+	<script src="https:////cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="icon" href="Assets/Images/favicon-64.png" type="image/gif" sizes="64X64"><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="icon" href="Assets/Images/favicon-64.png" type="image/gif" sizes="64X64">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<!-- Pixi JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- Pixi JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="Assets/Css/mainGit.css">
-<!--<link rel="stylesheet" type="text/css" href="Assets/Css/output.css">
+	<link rel="stylesheet" type="text/css" href="Assets/Css/mainGit.css">
+	<!--<link rel="stylesheet" type="text/css" href="Assets/Css/output.css">
 <link rel="stylesheet" type="text/css" href="Assets/Css/testing.css">-->
-<script type="text/javascript" src='mainGit.js'></script>
-<script type="text/javascript" src='pixis.js'></script>
+	<script type="text/javascript" defer src='mainGit.js'></script>
+	<script type="text/javascript" defer src='pixis.js'></script>
+	<script type="text/javascript" defer src='game.js'></script>
+
 
 </head>
-<body id = "body" data-spy="scroll" data-target=".navbar navbar-inverse" data-offset="50">
 
-<!-- Previous version 3.2.4 Date 02/08/18 17:55 -->
-<!-- Previous version 3.2.5 Date 19/09/18 21:37 -->
-<!-- Previous version 3.2.6 Date 24/09/18 11:37 -->
-<!-- Previous version 3.2.8 Date 04/10/18 12:26 -->
-<!-- Previous version 3.2.9 Date 10/10/18 20:45 -->
-<!-- Previous version 3.3.0 Date 10/10/18 22:35 -->
-<!-- Previous version 3.3.1 Date 16/10/18 20:00 -->
-<!-- Previous version 3.3.2 Date 24/10/18 17:40 -->
-<!-- Previous version 3.3.3 Date 09/04/22 19:40 -->
-<div id="version">v3.3.4</div>
-  
+<body id="body" data-spy="scroll" data-target=".navbar navbar-inverse" data-offset="50">
 
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-		<div class="loader-section section-left"></div>
-		<div class="loader-section section-right"></div>
-			  <div class="loader-section glitch w-100 d-block text-center" data-text="LOADING">LOADING</div>
-	
-  </div>
-  
-<!-- Image and text -->
-<nav class="navbar navbar-expand-lg transparent navbar-light">
-  <a class="navbar-brand-default active" href="#">
-    <img src="Assets/Images/LLM-LM.png" width="200" height="200" class="d-inline-block align-top" style="margin-top:-5px;" alt="">
-    Lava Lamp Media
-  </a>
-
-  
-     
-	<button id="myBtns" class="navbar-toggler menuBtn" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent20"
-        aria-expanded="false" aria-label="Toggle navigation">
-		<div class="animated-icon1">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</button>
-
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto  ">
-      <li  class="nav-item">
-        <a class="nav-link" href="webDesign.html">WEB DESIGN</a>
-      </li>
-      <li  class="nav-item">
-        <a class="nav-link" href="graphicDesign.html">GRAPHIC DESIGN</a>
-      </li>
-      <li  class="nav-item">
-        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-      </li>  
-	  <li  class="nav-item">
-        <a class="nav-link" href="contact.html">CONTACT</a>
-      </li>	  
-    </ul>
-  </div>  
+	<!-- Previous version 3.2.4 Date 02/08/18 17:55 -->
+	<!-- Previous version 3.2.5 Date 19/09/18 21:37 -->
+	<!-- Previous version 3.2.6 Date 24/09/18 11:37 -->
+	<!-- Previous version 3.2.8 Date 04/10/18 12:26 -->
+	<!-- Previous version 3.2.9 Date 10/10/18 20:45 -->
+	<!-- Previous version 3.3.0 Date 10/10/18 22:35 -->
+	<!-- Previous version 3.3.1 Date 16/10/18 20:00 -->
+	<!-- Previous version 3.3.2 Date 24/10/18 17:40 -->
+	<!-- Previous version 3.3.3 Date 09/04/22 19:40 -->
+	<header>
+		<div id="version">v3.3.4</div>
 
 
-</nav>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+			<div class="loader-section glitch w-100 d-block text-center" data-text="LOADING">LOADING</div>
 
-<header>
-
-</header>
-<div class="row">
-	<div class="col-1"> </div>
-	<div class="ipsum col-10">
-
-		<div class="container welcome text-center py-5">
-			</br>
-			<h3>Look at all the fancy animations.</h3>
-			<h1>Click to see more.</h1>
-			<!--taken from Blind.com's site as placeholder because i like what they do. :);-->
-			<a class="btn" id="loadAnmi" href="#capes" onclick="function5(this.id)"><img src="Assets/Images/Arrow.png"
-					width="20%" /></a>
 		</div>
 
+		<!-- Image and text -->
+		<nav class="navbar navbar-expand-lg transparent navbar-light">
+			<a class="navbar-brand-default active" href="#">
+				<img src="Assets/Images/LLM-LM.png" width="200" height="200" class="d-inline-block align-top"
+					style="margin-top:-5px;" alt="">
+				Lava Lamp Media
+			</a>
+
+
+
+			<button id="myBtns" class="navbar-toggler menuBtn" type="button" data-toggle="collapse"
+				data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent20" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<div class="animated-icon1">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto  ">
+					<li class="nav-item">
+						<a class="nav-link" href="webDesign.html">WEB DESIGN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="graphicDesign.html">GRAPHIC DESIGN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+
+
+		</nav>
+
+
+
+	</header>
+	<div class="row">
+		<div class="col-1"> </div>
+		<div class="ipsum col-10">
+
+			<div class="container welcome text-center py-5">
+				</br>
+				<h3>Look at all the fancy animations.</h3>
+				<h1>Click to see more.</h1>
+				<!--taken from Blind.com's site as placeholder because i like what they do. :);-->
+				<a class="btn" id="loadAnmi" href="#capes" onclick="function5(this.id)"><img
+						src="Assets/Images/Arrow.png" width="20%" /></a>
+			</div>
+
+		</div>
+		<div class="col-1"> </div>
 	</div>
-	<div class="col-1"> </div>
-</div>
 
 
 	<!-- CAPABILITIES Section -->
-	<div id="capesContainer">	
-	<!--Articles Section-->
-	<div class="row m-1">
-		<div  id="capes" data-spy="scroll" data-target="#btn" data-offset="0" 
-		class="container-fluid col-lg-3 pt-5 mt-5 py-3 text-center">CAPABILITIES</div>
-	</div>
-	
-	
-<div class="picsandtext row m-3 ">   
-<div class="capeImg col-sm m-3" align="center">
-  <svg onclick="function5(this.id)" id="letters1" viewBox="-15 0 410 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-	<g id="Layer_1">
-			<path fill="none" stroke="#000000" stroke-width="29" stroke-linecap="round" stroke-linejoin="round" d="M566.167,452.668"/>
-		</g>
-		<g id="Layer_2">
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="339.5781" y1="388.5781" x2="35.4221" y2="84.4221">
-				<stop  offset="0" style="stop-color:#29D8FF"/>
-				<stop  offset="1" style="stop-color:#FF00D4"/>
-			</linearGradient>
-			<path fill="none" stroke="url(#SVGID_1_)" stroke-width="7" d="M12,117.5h352v203H12V117.5z M152.196,359.334
+	<div id="capesContainer">
+		<!--Articles Section-->
+		<div class="row m-1">
+			<div id="capes" data-spy="scroll" data-target="#btn" data-offset="0"
+				class="container-fluid col-lg-3 pt-5 mt-5 py-3 text-center"></br>CAPABILITIES</div>
+		</div>
+
+
+		<div class="picsandtext row m-3 ">
+			<div class="capeImg col-sm m-3" align="center">
+				<svg onclick="function5(this.id)" id="letters1" viewBox="-15 0 410 410" version="1.1"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+					style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+					<g id="Layer_1">
+						<path fill="none" stroke="#000000" stroke-width="29" stroke-linecap="round"
+							stroke-linejoin="round" d="M566.167,452.668" />
+					</g>
+					<g id="Layer_2">
+						<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="339.5781" y1="388.5781"
+							x2="35.4221" y2="84.4221">
+							<stop offset="0" style="stop-color:#29D8FF" />
+							<stop offset="1" style="stop-color:#FF00D4" />
+						</linearGradient>
+						<path fill="none" stroke="url(#SVGID_1_)" stroke-width="7" d="M12,117.5h352v203H12V117.5z M152.196,359.334
 				c0,0,0.906,9.322-3.667,34.333c-2.083,2.958-18.333,10.786-9.333,10.8c4.292,0.008,94.345,0.008,98.638,0
 				c8.998-0.014-7.25-7.858-9.334-10.816c-4.572-25.011-3.666-34.324-3.666-34.324 M369,350.5c0,4.971-4.063,9-9.075,9H15.075
-				c-5.012,0-9.075-4.029-9.075-9v-228c0-4.971,4.063-9,9.075-9h344.85c5.012,0,9.075,4.029,9.075,9V350.5z"/>
-		</g>
-		<g id="Layer_3">
-			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="236.5703" y1="307.9297" x2="52.05" y2="123.4093">
-				<stop  offset="0" style="stop-color:#29D8FF"/>
-				<stop  offset="1" style="stop-color:#FF00D4"/>
-			</linearGradient>
-			<path fill="none" stroke="url(#SVGID_2_)" stroke-width="4" d="M98.5,130v178 M56.833,131.672
+				c-5.012,0-9.075-4.029-9.075-9v-228c0-4.971,4.063-9,9.075-9h344.85c5.012,0,9.075,4.029,9.075,9V350.5z" />
+					</g>
+					<g id="Layer_3">
+						<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="236.5703" y1="307.9297"
+							x2="52.05" y2="123.4093">
+							<stop offset="0" style="stop-color:#29D8FF" />
+							<stop offset="1" style="stop-color:#FF00D4" />
+						</linearGradient>
+						<path fill="none" stroke="url(#SVGID_2_)" stroke-width="4" d="M98.5,130v178 M56.833,131.672
 				c-13.623,0-24.667,11.043-24.667,24.667s11.043,24.667,24.667,24.667S81.5,169.962,81.5,156.339S70.457,131.672,56.833,131.672z
 				 M56.833,194.172c-13.623,0-24.667,11.043-24.667,24.667s11.043,24.667,24.667,24.667S81.5,232.462,81.5,218.839
 				S70.457,194.172,56.833,194.172z M56.833,256.672c-13.623,0-24.667,11.044-24.667,24.667s11.043,24.667,24.667,24.667
 				S81.5,294.962,81.5,281.339S70.457,256.672,56.833,256.672z M112.5,188h193 M112.5,200h187 M113.5,153h132 M112.5,214h193
-				 M112.5,224h165 M113.5,171h138 M112.5,237h193 M112.5,276h96 M112.5,286h113 M112.5,297h68"/>
-		</g>
-		<g id="Layer_4">
-			<polyline fill="none" stroke="#00FF5F" stroke-width="7" points="79.729,133.796 52.158,170.455 45.261,154.25 			"/>
-			<polyline fill="none" stroke="#00FF5F" stroke-width="7" points="80.063,196.796 52.492,233.455 45.595,217.25 			"/>
-			<polyline fill="none" stroke="#00FF5F" stroke-width="7" points="80.063,258.796 52.492,295.455 45.595,279.25 			"/>
-		</g>
-		<g id="Layer_5">
-			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="271.3271" y1="122.7983" x2="103.8623" y2="-44.6665">
-				<stop  offset="0" style="stop-color:#29D8FF"/>
-				<stop  offset="1" style="stop-color:#FF00D4"/>
-			</linearGradient>
-			<path fill="none" stroke="url(#SVGID_3_)" stroke-width="4.1726" d="M49.895,13.183c4.157-0.627,9.099-1.099,14.512-1.099
+				 M112.5,224h165 M113.5,171h138 M112.5,237h193 M112.5,276h96 M112.5,286h113 M112.5,297h68" />
+					</g>
+					<g id="Layer_4">
+						<polyline fill="none" stroke="#00FF5F" stroke-width="7"
+							points="79.729,133.796 52.158,170.455 45.261,154.25 			" />
+						<polyline fill="none" stroke="#00FF5F" stroke-width="7"
+							points="80.063,196.796 52.492,233.455 45.595,217.25 			" />
+						<polyline fill="none" stroke="#00FF5F" stroke-width="7"
+							points="80.063,258.796 52.492,295.455 45.595,279.25 			" />
+					</g>
+					<g id="Layer_5">
+						<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="271.3271" y1="122.7983"
+							x2="103.8623" y2="-44.6665">
+							<stop offset="0" style="stop-color:#29D8FF" />
+							<stop offset="1" style="stop-color:#FF00D4" />
+						</linearGradient>
+						<path fill="none" stroke="url(#SVGID_3_)" stroke-width="4.1726"
+							d="M49.895,13.183c4.157-0.627,9.099-1.099,14.512-1.099
 				c9.805,0,16.786,2.275,21.414,6.589c4.706,4.314,7.452,10.433,7.452,18.983c0,8.628-2.668,15.688-7.609,20.551
 				c-4.941,4.942-13.1,7.609-23.375,7.609c-4.863,0-8.942-0.235-12.394-0.627V13.183z M56.719,59.934
 				c1.726,0.314,4.236,0.392,6.902,0.392c14.591,0,22.513-8.158,22.513-22.434c0.078-12.472-6.98-20.395-21.414-20.395
@@ -181,83 +199,96 @@ Lava Lamp Media
 				c-2.822-1.255-6.353-2.275-11.687-2.275c-12.864,0-21.257,8.001-21.257,21.258c0,13.413,8.078,21.336,20.394,21.336
 				c4.472,0,7.53-0.627,9.1-1.413V43.069h-10.747v-5.491h17.414V62.993z M284.914,65.346V12.477h7.452l16.943,26.749
 				c3.922,6.196,6.981,11.766,9.491,17.178l0.157-0.079c-0.628-7.06-0.785-13.492-0.785-21.728v-22.12h6.433v52.869h-6.902
-				l-16.787-26.827c-3.687-5.883-7.217-11.923-9.884-17.649l-0.234,0.079c0.392,6.667,0.549,13.021,0.549,21.806v22.591H284.914z"/>
-			</g>
-			</g>
-  </svg>
-		<p class=" my-4">Our mission is to create invisible design that works for you and communicates your message.</p>
-</div>
- 
-<div class="capeImg col-sm m-3" align="center">
-  <svg onclick="function5(this.id)" id="letters2" viewBox="110 90 580 580" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    
-		<g id="Layer_3">
-			<g>
-				<path style="fill:none;stroke:#00FFFF;stroke-width:18.1158;stroke-linecap:round;" d="M400,460.557"/>
-				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="319.2339" y1="565.0996" x2="430.9473" y2="565.0996">
-					<stop  offset="0" style="stop-color:#D600FF"/>
-					<stop  offset="1" style="stop-color:#00CEE2"/>
-				</linearGradient>
-				<path style="fill:none;stroke:url(#SVGID_2_);stroke-width:18.1158;stroke-linecap:round;" d="M328.292,682.476
+				l-16.787-26.827c-3.687-5.883-7.217-11.923-9.884-17.649l-0.234,0.079c0.392,6.667,0.549,13.021,0.549,21.806v22.591H284.914z" />
+					</g>
+					</g>
+				</svg>
+				<p class=" my-4">Our mission is to create invisible design that works for you and communicates your
+					message.</p>
+			</div>
+
+			<div class="capeImg col-sm m-3" align="center">
+				<svg onclick="function5(this.id)" id="letters2" viewBox="110 90 580 580" version="1.1"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+					style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+
+					<g id="Layer_3">
+						<g>
+							<path style="fill:none;stroke:#00FFFF;stroke-width:18.1158;stroke-linecap:round;"
+								d="M400,460.557" />
+							<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="319.2339" y1="565.0996"
+								x2="430.9473" y2="565.0996">
+								<stop offset="0" style="stop-color:#D600FF" />
+								<stop offset="1" style="stop-color:#00CEE2" />
+							</linearGradient>
+							<path style="fill:none;stroke:url(#SVGID_2_);stroke-width:18.1158;stroke-linecap:round;"
+								d="M328.292,682.476
 					c0.708-24.454,5.411-48.574,11.677-72.294c2.424-9.177,5.082-18.293,7.833-27.344c2.253-7.415,4.569-14.788,6.871-22.115
 					c10.826-34.467,21.324-67.934,23.438-100.166c0-12.09,9.8-21.89,21.889-21.89c12.09,0,21.891,9.8,21.891,21.89
-					c-0.051,9.224-1.038,18.612-2.709,28.163c-1.423,8.133-3.342,16.384-5.601,24.75c-14.737,54.577-43.962,114.091-44.527,178.063"
-					/>
-				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="283.9448" y1="547.7383" x2="467.2334" y2="547.7383">
-					<stop  offset="0" style="stop-color:#D600FF"/>
-					<stop  offset="1" style="stop-color:#00CEE2"/>
-				</linearGradient>
-				<path style="fill:none;stroke:url(#SVGID_3_);stroke-width:18.1158;stroke-linecap:round;" d="M407.57,658
+					c-0.051,9.224-1.038,18.612-2.709,28.163c-1.423,8.133-3.342,16.384-5.601,24.75c-14.737,54.577-43.962,114.091-44.527,178.063" />
+							<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="283.9448" y1="547.7383"
+								x2="467.2334" y2="547.7383">
+								<stop offset="0" style="stop-color:#D600FF" />
+								<stop offset="1" style="stop-color:#00CEE2" />
+							</linearGradient>
+							<path style="fill:none;stroke:url(#SVGID_3_);stroke-width:18.1158;stroke-linecap:round;" d="M407.57,658
 					c-1.644,11.714-2.613,23.434-2.663,35.043 M441.099,419.458c10.518,10.518,17.777,21.474,17.023,41.099
 					c0.502,32.924-23.095,85.93-39.028,143.751c-2.486,9.019-4.785,18.153-6.776,27.35 M422.624,407.002
 					c-6.954-2.941-14.599-4.567-22.624-4.567c-32.1,0-58.122,26.021-58.122,58.122c-0.204,7.706-0.936,15.371-2.081,22.992
-					c-1.257,8.37-3.01,16.685-5.105,24.935c-13.656,53.759-41.834,104.771-41.688,150.592"/>
-				<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="246.2803" y1="526.0127" x2="505.7227" y2="526.0127">
-					<stop  offset="0" style="stop-color:#D600FF"/>
-					<stop  offset="1" style="stop-color:#00CEE2"/>
-				</linearGradient>
-				<path style="fill:none;stroke:url(#SVGID_4_);stroke-width:18.1158;stroke-linecap:round;" d="M260.803,600.058
+					c-1.257,8.37-3.01,16.685-5.105,24.935c-13.656,53.759-41.834,104.771-41.688,150.592" />
+							<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="246.2803" y1="526.0127"
+								x2="505.7227" y2="526.0127">
+								<stop offset="0" style="stop-color:#D600FF" />
+								<stop offset="1" style="stop-color:#00CEE2" />
+							</linearGradient>
+							<path style="fill:none;stroke:url(#SVGID_4_);stroke-width:18.1158;stroke-linecap:round;" d="M260.803,600.058
 					c12.292-42.527,41.166-88.204,42.532-139.501c0-31.57,15.135-59.605,38.544-77.246 M255.829,643.225
 					c-0.827-7.492-0.572-15.063,0.49-22.726 M444.157,688.134c0.717-60.372,23.279-111.186,38.598-158.478
 					c0.665-2.052,1.316-4.098,1.951-6.137c1.655-5.313,3.2-10.586,4.596-15.825c4.244-15.936,7.092-31.566,7.363-47.138
-					c0-53.386-43.278-96.665-96.665-96.665c-3.82,0-7.59,0.222-11.295,0.653"/>
-				<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="207.1333" y1="502.8496" x2="541.8682" y2="502.8496">
-					<stop  offset="0" style="stop-color:#D600FF"/>
-					<stop  offset="1" style="stop-color:#00CEE2"/>
-				</linearGradient>
-				<path style="fill:none;stroke:url(#SVGID_5_);stroke-width:18.1158;stroke-linecap:round;" d="M254.193,516.152
+					c0-53.386-43.278-96.665-96.665-96.665c-3.82,0-7.59,0.222-11.295,0.653" />
+							<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="207.1333" y1="502.8496"
+								x2="541.8682" y2="502.8496">
+								<stop offset="0" style="stop-color:#D600FF" />
+								<stop offset="1" style="stop-color:#00CEE2" />
+							</linearGradient>
+							<path style="fill:none;stroke:url(#SVGID_5_);stroke-width:18.1158;stroke-linecap:round;" d="M254.193,516.152
 					c7.036-15.665,12.397-33.558,13.004-55.596c0-73.344,59.458-132.803,132.803-132.803c24.316,0,47.108,6.536,66.712,17.947
 					 M216.21,606.908c-0.485-20.765,8.624-37.813,19.276-56.151 M497.454,594.664c14.613-53.409,35.07-104.686,35.349-134.107
-					c0.425-44.918-16.457-73.333-42.736-97.597 M483.031,677.946c0.348-14.069,2.23-28.789,5.077-43.724"/>
-				<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="180.2407" y1="479.1309" x2="573.3281" y2="479.1309">
-					<stop  offset="0" style="stop-color:#D600FF"/>
-					<stop  offset="1" style="stop-color:#00CEE2"/>
-				</linearGradient>
-				<path style="fill:none;stroke:url(#SVGID_6_);stroke-width:18.1158;stroke-linecap:round;" d="M237.491,436.426
+					c0.425-44.918-16.457-73.333-42.736-97.597 M483.031,677.946c0.348-14.069,2.23-28.789,5.077-43.724" />
+							<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="180.2407" y1="479.1309"
+								x2="573.3281" y2="479.1309">
+								<stop offset="0" style="stop-color:#D600FF" />
+								<stop offset="1" style="stop-color:#00CEE2" />
+							</linearGradient>
+							<path style="fill:none;stroke:url(#SVGID_6_);stroke-width:18.1158;stroke-linecap:round;" d="M237.491,436.426
 					c-1.16,7.875-1.76,15.932-1.76,24.13c-2.547,65.673-45.781,62.007-46.432,104.034 M424.815,298.15
 					c-8.093-1.227-16.38-1.863-24.815-1.863c-71.013,0-131.502,45.06-154.433,108.148 M472.116,312.922
-					c54.572,26.707,92.153,82.782,92.153,147.634c-1.604,65.296-41.528,140.54-43.269,201.42"/>
-				<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="161.1445" y1="447.0215" x2="606.3496" y2="447.0215">
-					<stop  offset="0" style="stop-color:#D600FF"/>
-					<stop  offset="1" style="stop-color:#00CEE2"/>
-				</linearGradient>
-				<path style="fill:none;stroke:url(#SVGID_7_);stroke-width:18;stroke-linecap:round;" d="M433.843,266.158
+					c54.572,26.707,92.153,82.782,92.153,147.634c-1.604,65.296-41.528,140.54-43.269,201.42" />
+							<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="161.1445" y1="447.0215"
+								x2="606.3496" y2="447.0215">
+								<stop offset="0" style="stop-color:#D600FF" />
+								<stop offset="1" style="stop-color:#00CEE2" />
+							</linearGradient>
+							<path style="fill:none;stroke:url(#SVGID_7_);stroke-width:18;stroke-linecap:round;" d="M433.843,266.158
 					c62.491,10.803,114.914,51.003,142.506,105.844 M389.985,263.527C285.778,268.85,203,355.026,203,460.556v1.699
 					c-4,29.63-31.883,28.493-32.855,46.422 M567.676,582.015c3.398-9.709,7.029-19.876,10.544-30.353
-					c9.748-29.062,18.597-60.494,19.072-91.106c0-5.219-0.203-10.391-0.601-15.508 M552.211,639.517"/>
-				<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="156.0034" y1="460.5566" x2="643.9961" y2="460.5566">
-					<stop  offset="0" style="stop-color:#D600FF"/>
-					<stop  offset="1" style="stop-color:#00CEE2"/>
-				</linearGradient>
-				
-				<circle style="fill:none;stroke:url(#SVGID_8_);stroke-width:18.1158;stroke-linecap:round;" cx="400" cy="460.556" r="234.938"/>
-			</g>
-			 <g id="Layer_1">
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="142.1914" y1="145.6182" x2="660.3301" y2="145.6182">
-				<stop  offset="0" style="stop-color:#D600FF"/>
-				<stop  offset="1" style="stop-color:#00CEE2"/>
-			</linearGradient>
-			<path style="fill:none;stroke:url(#SVGID_1_);stroke-width:6.7934;" d="M155.438,107.403v76.317h-9.851v-76.317H155.438z
+					c9.748-29.062,18.597-60.494,19.072-91.106c0-5.219-0.203-10.391-0.601-15.508 M552.211,639.517" />
+							<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="156.0034" y1="460.5566"
+								x2="643.9961" y2="460.5566">
+								<stop offset="0" style="stop-color:#D600FF" />
+								<stop offset="1" style="stop-color:#00CEE2" />
+							</linearGradient>
+
+							<circle style="fill:none;stroke:url(#SVGID_8_);stroke-width:18.1158;stroke-linecap:round;"
+								cx="400" cy="460.556" r="234.938" />
+						</g>
+						<g id="Layer_1">
+							<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="142.1914" y1="145.6182"
+								x2="660.3301" y2="145.6182">
+								<stop offset="0" style="stop-color:#D600FF" />
+								<stop offset="1" style="stop-color:#00CEE2" />
+							</linearGradient>
+							<path style="fill:none;stroke:url(#SVGID_1_);stroke-width:6.7934;" d="M155.438,107.403v76.317h-9.851v-76.317H155.438z
 				 M184.197,108.422c6-0.906,13.135-1.585,20.948-1.585c14.154,0,24.231,3.284,30.912,9.512
 				c6.793,6.228,10.756,15.06,10.756,27.402c0,12.456-3.85,22.646-10.983,29.667c-7.134,7.133-18.91,10.983-33.743,10.983
 				c-7.02,0-12.908-0.34-17.89-0.906V108.422z M194.047,175.908c2.491,0.453,6.115,0.566,9.965,0.566
@@ -268,50 +299,65 @@ Lava Lamp Media
 				c0.566,9.625,0.792,18.796,0.792,31.478v32.61H338.405z M438.947,115.782h-23.212v-8.379h56.501v8.379h-23.325v67.938h-9.964
 				V115.782z M502.125,107.403v76.317h-9.851v-76.317H502.125z M545.377,115.782h-23.214v-8.379h56.504v8.379h-23.326v67.938h-9.964
 				V115.782z M618.858,183.72v-32.384l-24.119-43.934h11.21l10.758,21.061c2.944,5.775,5.209,10.417,7.586,15.739h0.227
-				c2.151-4.982,4.756-9.964,7.699-15.739l10.983-21.061h11.21l-25.591,43.82v32.497H618.858z"/>
-			<g>
-			</g>
-		</g>
-			</g>
-		</svg>
-		<p  class="my-4">We create unique media and stratiges that allow
-		people to know who you are and what you're about.</p>
-	</div>
+				c2.151-4.982,4.756-9.964,7.699-15.739l10.983-21.061h11.21l-25.591,43.82v32.497H618.858z" />
+							<g>
+							</g>
+						</g>
+					</g>
+				</svg>
+				<p class="my-4">We create unique media and stratiges that allow
+					people to know who you are and what you're about.</p>
+			</div>
 
-<div class="capeImg col-sm m-3" align="center">
-  <svg onclick="function5(this.id)" id="letters3" viewBox="85 80 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="652.6748" y1="729.1748" x2="147.3255" y2="223.8255">
-			<stop  offset="0" style="stop-color:#4053D4"/>
-			<stop  offset="1" style="stop-color:#BD4264"/>
-		</linearGradient>
-		<rect x="98.5" y="287.5" fill="none" stroke="url(#SVGID_1_)" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="603" height="378"/>
-			<g>
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="433.9121" y1="509.4297" x2="366.0906" y2="441.6082">
-			<stop  offset="0" style="stop-color:#4053D4"/>
-			<stop  offset="1" style="stop-color:#BD4264"/>
-		</linearGradient>
-	
-		<line fill="#FFFFFF" stroke="url(#SVGID_2_)" stroke-width="16.2298" stroke-linecap="round" stroke-miterlimit="10" x1="441.034" y1="378.14" x2="358.968" y2="572.896"/>
-		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="329.5264" y1="519.9893" x2="240.5849" y2="431.0478">
-			<stop  offset="0" style="stop-color:#4053D4"/>
-			<stop  offset="1" style="stop-color:#BD4264"/>
-		</linearGradient>
-		<polyline fill="none" stroke="url(#SVGID_3_)" stroke-width="16.2298" stroke-linecap="round" stroke-miterlimit="10" points="
-				285.056,552.983 229.908,475.519 285.056,398.054 	"/>
-		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="559.415" y1="519.9893" x2="470.4743" y2="431.0485">
-				<stop  offset="0" style="stop-color:#4053D4"/>
-				<stop  offset="1" style="stop-color:#BD4264"/>
-		</linearGradient>
-			<polyline fill="none" stroke="url(#SVGID_4_)" stroke-width="16.2298" stroke-linecap="round" stroke-miterlimit="10" points="
-				514.944,552.982 570.092,475.519 514.944,398.054 	"/>
-			</g>
-			<circle fill="none" stroke="#00FF00" stroke-width="14.7568" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="131.154" cy="319.28" r="6.456"/>
-			<circle fill="none" stroke="#F7931E" stroke-width="14.7568" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="162.144" cy="319.28" r="6.456"/>
-		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="149.1455" y1="147.5757" x2="650.3311" y2="147.5757">
-			<stop  offset="0" style="stop-color:#4053D4"/>
-			<stop  offset="1" style="stop-color:#BD4264"/>
-		</linearGradient>
-			<path fill="none" stroke="url(#SVGID_5_)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			<div class="capeImg col-sm m-3" align="center">
+				<svg onclick="function5(this.id)" id="letters3" viewBox="85 80 630 630" version="1.1"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+					style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+					<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="652.6748" y1="729.1748"
+						x2="147.3255" y2="223.8255">
+						<stop offset="0" style="stop-color:#4053D4" />
+						<stop offset="1" style="stop-color:#BD4264" />
+					</linearGradient>
+					<rect x="98.5" y="287.5" fill="none" stroke="url(#SVGID_1_)" stroke-width="21"
+						stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="603"
+						height="378" />
+					<g>
+						<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="433.9121" y1="509.4297"
+							x2="366.0906" y2="441.6082">
+							<stop offset="0" style="stop-color:#4053D4" />
+							<stop offset="1" style="stop-color:#BD4264" />
+						</linearGradient>
+
+						<line fill="#FFFFFF" stroke="url(#SVGID_2_)" stroke-width="16.2298" stroke-linecap="round"
+							stroke-miterlimit="10" x1="441.034" y1="378.14" x2="358.968" y2="572.896" />
+						<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="329.5264" y1="519.9893"
+							x2="240.5849" y2="431.0478">
+							<stop offset="0" style="stop-color:#4053D4" />
+							<stop offset="1" style="stop-color:#BD4264" />
+						</linearGradient>
+						<polyline fill="none" stroke="url(#SVGID_3_)" stroke-width="16.2298" stroke-linecap="round"
+							stroke-miterlimit="10" points="
+				285.056,552.983 229.908,475.519 285.056,398.054 	" />
+						<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="559.415" y1="519.9893"
+							x2="470.4743" y2="431.0485">
+							<stop offset="0" style="stop-color:#4053D4" />
+							<stop offset="1" style="stop-color:#BD4264" />
+						</linearGradient>
+						<polyline fill="none" stroke="url(#SVGID_4_)" stroke-width="16.2298" stroke-linecap="round"
+							stroke-miterlimit="10" points="
+				514.944,552.982 570.092,475.519 514.944,398.054 	" />
+					</g>
+					<circle fill="none" stroke="#00FF00" stroke-width="14.7568" stroke-linecap="round"
+						stroke-linejoin="round" stroke-miterlimit="10" cx="131.154" cy="319.28" r="6.456" />
+					<circle fill="none" stroke="#F7931E" stroke-width="14.7568" stroke-linecap="round"
+						stroke-linejoin="round" stroke-miterlimit="10" cx="162.144" cy="319.28" r="6.456" />
+					<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="149.1455" y1="147.5757"
+						x2="650.3311" y2="147.5757">
+						<stop offset="0" style="stop-color:#4053D4" />
+						<stop offset="1" style="stop-color:#BD4264" />
+					</linearGradient>
+					<path fill="none" stroke="url(#SVGID_5_)" stroke-width="6" stroke-linecap="round"
+						stroke-linejoin="round" stroke-miterlimit="10" d="
 				M152.146,109.854c6.096-0.92,13.341-1.61,21.276-1.61c14.375,0,24.611,3.335,31.396,9.661c6.9,6.325,10.925,15.296,10.925,27.831
 				c0,12.651-3.91,23.001-11.155,30.132c-7.246,7.245-19.206,11.155-34.272,11.155c-7.13,0-13.11-0.345-18.171-0.92V109.854z
 				M162.151,178.397c2.53,0.46,6.21,0.575,10.12,0.575c21.391,0,33.007-11.96,33.007-32.892c0.115-18.286-10.235-29.901-31.396-29.901
@@ -326,95 +372,126 @@ Lava Lamp Media
 				c9.89,0,17.136,2.3,21.735,6.44c4.256,3.68,6.785,9.315,6.785,16.216c0,7.015-2.069,12.536-5.979,16.561
 				c-5.291,5.635-13.916,8.511-23.691,8.511c-2.99,0-5.75-0.115-8.051-0.69v31.051h-10.005V109.739z M609.609,147.116
 				c2.186,0.575,4.945,0.805,8.28,0.805c12.076,0,19.437-5.866,19.437-16.561c0-10.235-7.245-15.181-18.286-15.181
-				c-4.37,0-7.705,0.345-9.431,0.805V147.116z"/>
-			<circle fill="none" stroke="#FF0000" stroke-width="14.7568" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="193.133" cy="319.28" r="6.456"/>
+				c-4.37,0-7.705,0.345-9.431,0.805V147.116z" />
+					<circle fill="none" stroke="#FF0000" stroke-width="14.7568" stroke-linecap="round"
+						stroke-linejoin="round" stroke-miterlimit="10" cx="193.133" cy="319.28" r="6.456" />
 
-			</g>
-		</svg>
-  
-		<p class="my-4">To have systems in place so that you can scale, 
-		grow and break down your barriers.</p>
-  
-	</div>
-  </div>
-</div>
-    <!--CAPABILITIES Section End-->
-  	
-	<!--Carousel Section-->
+					</g>
+				</svg>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-<ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
- <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class=" " src="Assets/Images/llmBan-01.png" alt="First slide">
-	   
-    </div>
-    <div class="carousel-item">
-      <img class="" src="Assets/Images/llmBan-03.png" alt="Second slide">
-    </div>
-   
-	</div>
-	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	</a>
-</div>	
+				<p class="my-4">To have systems in place so that you can scale,
+					grow and break down your barriers.</p>
 
-		<!--Carousel Section End-->
-		
-<footer class="page-footer-default align-bottom">
-<!-- Footer Elements -->
-    <div class="container">
-
-      <!-- Grid row-->
-     
-	<div class="row ml-auto">
-		<div class="col-md-6 p-4">
-			<div class="mb-5 links">
-				<a href="index.html">HOME</a></br>
-				<a href="webDesign.html">WEB DESIGN</a></br>
-				<a href="graphicDesign.html">GRAPHIC DESIGN</a></br>
-				<a href="portfolio.html">PORTFOLIO</a></br>
-				<a href="contact.html">CONTACT</a>
 			</div>
 		</div>
-		
-		<div class="address col-md-6 p-4">
-          LAVA LAMP MEDIA.</br>
-		  SOMEWHERE ON THE INTERNET</br>
-		  100% REMOTE,</br>
-		  BASED IN IRELAND</br>
-				<div class="links">
-					<a class="ins-ic insta" href="https://www.instagram.com/lavalampmedia/" target="_blank">
-					<i class="fa fa-instagram fa-lg fa-2x white-text" aria-hidden="true"></i> 
-					</a>
+	</div>
+	<!--CAPABILITIES Section End-->
+
+	<!--Carousel Section-->
+	<div class="row ">
+		<div class="col-1">
+
+		</div>
+
+
+		<div id="carouselExampleControls" class="carouselRow carousel slide col-10" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class=" " src="Assets/Images/llmBan-01.png" alt="First slide">
+
 				</div>
+				<div class="carousel-item">
+					<img class="" src="Assets/Images/llmBan-03.png" alt="Second slide">
+				</div>
+
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<div class="col-1">
+
 		</div>
 	</div>
+	<!--Carousel Section End-->
+
+	<footer class="page-footer-default align-bottom">
+		<!-- Footer Elements -->
+		<div class="container">
+
+			<!-- Grid row-->
+
+			<div class="row ml-auto">
+				<div class="col-md-6 p-4">
+					<div class="mb-5 links">
+						<a href="index.html">HOME</a></br>
+						<a href="webDesign.html">WEB DESIGN</a></br>
+						<a href="graphicDesign.html">GRAPHIC DESIGN</a></br>
+						<a href="portfolio.html">PORTFOLIO</a></br>
+						<a href="contact.html">CONTACT</a>
+					</div>
+				</div>
+
+				<div class="address col-md-6 p-4">
+					LAVA LAMP MEDIA.</br>
+					SOMEWHERE ON THE INTERNET</br>
+					100% REMOTE,</br>
+					BASED IN IRELAND</br>
+					<div class="links">
+						<a class="ins-ic insta" href="https://www.instagram.com/lavalampmedia/" target="_blank">
+							<i class="fa fa-instagram fa-lg fa-2x white-text" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Grid row-->
+
+
+	</footer>
+
+
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">2022 Copyright:
+		<a href="https://mdbootstrap.com/bootstrap-tutorial/"> LavaLampMedia.com</a>
 	</div>
-      <!-- Grid row-->
+	<!-- Copyright -->
+	<div id="wrapper">
+		<canvas id="background" class="background"> </canvas>
+	</div>
 
-	
-</footer>
-	
-	
-  <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">2022 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> LavaLampMedia.com</a>
-    </div>
-    <!-- Copyright -->
-<div id="wrapper">
-<canvas id="background" class="background"> </canvas>
-</div>
+	<script src="path/to/particles.min.js"></script>
+	<div class="game_overlay hidden">
+		<div class="row">
+			<div class="col-11 p-4">
+				<h3>Wanna play a game???</h3>
+			</div>
+			<div id="closeG" class="col-1 text-center p-4">[ESC]</div>
 
-<script src="path/to/particles.min.js"></script>
+			<div class="gameWrapper col-12">
+				<div id="gameCanvas" class="row justify-content-center">
+					<!-- <canvas class="game" width="480" height="270"></canvas> -->
+				</div>
+				<div class="row justify-content-center p-3">
+					<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+				</div>
+				<div class="row justify-content-center p-3">
+					<p>Use the ACCELERATE button to stay in the air. </p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
