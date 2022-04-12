@@ -1,5 +1,4 @@
 
-
 /* Smooth Scrolling*/
 
 $(document).ready(function(){
@@ -31,33 +30,41 @@ $(document).ready(function(){
 /*---------------Game Launching Listener------------------*/
 var theGame= "";
 var timesLoaded = 0;
+let count = 0;
 document.addEventListener('keypress', (event) => {
   const keyName = event.key;
-  
+ 
   if(theGame.length !==4){
   if(keyName =="w"){
 	theGame+=keyName;
+  console.log("Key pressed "+theGame);
 	}
 	 if(keyName =="a"){
 	theGame+=keyName;
+  console.log("Key pressed "+theGame);
   }
    if(keyName =="s"){
 	theGame+=keyName;
+  console.log("Key pressed "+theGame);
   }
    if(keyName =="d"){
 	theGame+=keyName;
+  console.log("Key pressed "+theGame);
   }
   if(theGame == "wasd"){
   console.log("The game is a foot, ready on "+theGame);
   turnOnGame();
   theGame="";
   }
-  
-  console.log("the chars "+theGame);
+ 
 }
 else{
 	theGame="";
+  console.error("INVALID SEQUENCE [DoesNotActivateGame404]");
 }
+count++;
+
+return false;
 });
 
 /*---------------End of Launching Listener------------------*/
@@ -67,18 +74,25 @@ function turnOnGame(){
 var overlay = document.querySelector(".game_overlay");
 overlay.classList.remove("hidden");
 overlay.classList.add("show");
+
+startGame();
 }
 
 
 
 
-document.getElementById("closeG").addEventListener('click', (event) => {
+var esc = document.getElementById("closeG")
+
+if(esc){
+  esc.addEventListener('click', (event) => {
+
  
     var overlay = document.querySelector(".game_overlay");
     overlay.classList.remove("show");
     overlay.classList.add("hidden"); 
   
 });
+}
 /*---------------End of the game ------------------*/
 
 /*---------------Start of glitch Loader------------------*/
