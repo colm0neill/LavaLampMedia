@@ -217,7 +217,10 @@ function rmvGrey(){
 
 
 function changeSvg (){
-	var winWidth = window.innerWidth;
+  var svgcontainWidth = document.getElementById("svgLinez").width.baseVal.value;
+
+	// var winWidth = window.innerWidth;
+  var winWidth = svgcontainWidth-10;
 	var winHeight = document.getElementById("paraLamp").clientHeight;
 	var svgLineOne = document.getElementById("svgLinez1");
 	var svgLineTwo = document.getElementById("svgLinez2");
@@ -244,14 +247,14 @@ function changeSvg (){
 	
 	
 	var Line1x1 = winWidth;
-	var Line1y1 = 0;
+	var Line1y1 = 10;
 	var Line1x2 = (winWidth/2)+115;
 	var Line1y2 = (winHeight/2)-yOffSet;
 	
 	var Line2x1 = (winWidth/2)-115;
 	var Line2y1 = (winHeight/2)+yOffSet;
-	var Line2x2 = 0;
-	var Line2y2 = winHeight;
+	var Line2x2 = 10;
+	var Line2y2 = winHeight-10;
 	
 	
 	svgLineOne.setAttribute("x1",Line1x1);
@@ -269,6 +272,28 @@ function changeSvg (){
 }
 
 /*---------------End of SVG Line Modifier------------------*/
+
+/*---------------Useless button adjuster------------------*/
+window.addEventListener('resize', adjBtn);
+window.onload(adjBtn());
+function adjBtn(){
+var ele = document.getElementById("likeWhat");
+
+var buttlenght = ele.offsetWidth;
+var buttHeight = ele.offsetHeight;
+
+var back = document.querySelector(".btnBack")
+back.style.width = buttlenght;
+back.style.height = buttHeight;
+back.style.top = buttHeight - 6;
+var backDo = document.querySelector(".btnBackDo")
+backDo.style.width = buttlenght;
+backDo.style.height = buttHeight;
+backDo.style.top = buttHeight - 6;
+
+
+}
+/*---------------Useless button adjuster------------------*/
 
 
 

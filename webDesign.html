@@ -1,146 +1,183 @@
 <html>
 <title>
-Lava Lamp Media
+	Lava Lamp Media
 </title>
+
 <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-<!--Parallax.js for images -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<!--Particles.js for background -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-<!--Vivus.js for Svg Animations -->
-<script src="https:////cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+	<!--Parallax.js for images -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<!--Particles.js for background -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+	<!--Vivus.js for Svg Animations -->
+	<script src="https:////cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="icon" href="Assets/Images/favicon-64.png" type="image/gif" sizes="64X64"><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="icon" href="Assets/Images/favicon-64.png" type="image/gif" sizes="64X64">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<!-- Pixi JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- Pixi JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="Assets/Css/mainGit.css">
-<!--<link rel="stylesheet" type="text/css" href="Assets/Css/output.css">
+	<link rel="stylesheet" type="text/css" href="Assets/Css/mainGit.css">
+	<!--<link rel="stylesheet" type="text/css" href="Assets/Css/output.css">
 <link rel="stylesheet" type="text/css" href="Assets/Css/testing.css">-->
-<script type="text/javascript" src='mainGit.js'></script>
-<script type="text/javascript" src='pixis.js'></script>
+	<script type="text/javascript" defer src='mainGit.js'></script>
+	<script type="text/javascript" defer src='pixis.js'></script>
 
 </head>
+
 <body data-spy="scroll" data-target=".navbar navbar-inverse" data-offset="50">
+	<header>
+		<!-- Previous version 3.2.4 Date 02/08/18 17:55 -->
+		<!-- Previous version 3.2.5 Date 19/09/18 21:37 -->
+		<!-- Previous version 3.2.6 Date 24/09/18 11:37 -->
+		<!-- Previous version 3.2.8 Date 04/10/18 12:26 -->
+		<!-- Previous version 3.2.9 Date 10/10/18 20:45 -->
+		<!-- Previous version 3.3.0 Date 10/10/18 22:35 -->
+		<!-- Previous version 3.3.1 Date 16/10/18 20:00 -->
+		<!-- Previous version 3.3.2 Date 24/10/18 17:40 -->
+		<div id="version">v3.3.3</div>
 
-<!-- Previous version 3.2.4 Date 02/08/18 17:55 -->
-<!-- Previous version 3.2.5 Date 19/09/18 21:37 -->
-<!-- Previous version 3.2.6 Date 24/09/18 11:37 -->
-<!-- Previous version 3.2.8 Date 04/10/18 12:26 -->
-<!-- Previous version 3.2.9 Date 10/10/18 20:45 -->
-<!-- Previous version 3.3.0 Date 10/10/18 22:35 -->
-<!-- Previous version 3.3.1 Date 16/10/18 20:00 -->
-<!-- Previous version 3.3.2 Date 24/10/18 17:40 -->
-<div id="version">v3.3.3</div>
-  
 
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-		<div class="loader-section section-left"></div>
-		<div class="loader-section section-right"></div>
-			  <div class="loader-section glitch w-100 d-block text-center" data-text="LOADING">LOADING</div>
-	
-  </div>
-  
-<!-- Image and text -->
-<nav class="navbar navbar-expand-lg transparent navbar-light">
-  <a class="navbar-brand-default" href="index.html">
-    <img src="Assets/Images/LLM-LM.png" width="200" height="200" class="d-inline-block align-top" style="margin-top:-5px;" alt="">
-    Lava Lamp Media
-  </a>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+			<div class="loader-section glitch w-100 d-block text-center" data-text="LOADING">LOADING</div>
 
-  
-     
-	<button id="myBtns" class="navbar-toggler menuBtn" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent20"
-        aria-expanded="false" aria-label="Toggle navigation">
-		<div class="animated-icon1">
-			<span></span>
-			<span></span>
-			<span></span>
 		</div>
-	</button>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto  ">
-      <li  class="nav-item">
-        <a class="nav-link active" href="webDesign.html">WEB DESIGN</a>
-      </li>
-      <li  class="nav-item">
-        <a class="nav-link" href="graphicDesign.html">GRAPHIC DESIGN</a>
-      </li>
-      <li  class="nav-item">
-        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-      </li>  
-	  <li  class="nav-item">
-        <a class="nav-link" href="contact.html">CONTACT</a>
-      </li>	  
-    </ul>
-  </div>  
+		<!-- Image and text -->
+		<nav class="navbar navbar-expand-lg transparent navbar-light">
+			<a class="navbar-brand-default" href="index.html">
+				<img src="Assets/Images/LLM-LM.png" width="200" height="200" class="d-inline-block align-top"
+					style="margin-top:-5px;" alt="">
+				Lava Lamp Media
+			</a>
 
 
-</nav>
 
-<header>
+			<button id="myBtns" class="navbar-toggler menuBtn" type="button" data-toggle="collapse"
+				data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent20" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<div class="animated-icon1">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
 
-</header>
-<div class="ipsum ">
-
-<div id="paraLamp"class="paraLamp col-md-12 mt-3 " align="center">
-			<h1 id="title1" class="webT col-md-6"align="left">WEB</h1>
-				
-			<div id="scene">
-				
-				<div class="layer1 w-100" data-depth="0.1"><img src="Assets/Images/paralamp2.png" width="230px" height="500px"/></div>
-				<div id="display" class="col-md-12 mt-3 w-100 "></div>
-				<div class="layer2 w-100" data-depth="0.3"><img src="Assets/Images/paralamp3.png" width="230px" height="500px"/></div>
-			
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto  ">
+					<li class="nav-item">
+						<a class="nav-link active" href="webDesign.html">WEB DESIGN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="graphicDesign.html">GRAPHIC DESIGN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">CONTACT</a>
+					</li>
+				</ul>
 			</div>
-			
-			<h1 id="title2" class="webT col-md-7 " align="right">DESIGN</h1>
-			<div id="buttonBoss">
-			<div class="btnBack" ></div>
-			<button id="likeWhat" onmousedown="buttonIn()"onmouseup="buttonOut()" class="btn-default"> If you like what we can do with two images, scroll down</button>
-		</div>
-		
-		<svg id="svgLinez" height="100%" width="100%">
-					<line id="svgLinez1" x1="1400" y1="0" x2="0" y2="700" style="stroke:rgb(85,189,212);stroke-width:12" />
-					<line id="svgLinez2" x1="1400" y1="0" x2="0" y2="700" style="stroke:rgb(85,189,212);stroke-width:12" />
-				</svg>
-		</div>
 
-		
-		
+
+		</nav>
+
+
+
+	</header>
+	<div class="row">
+		<div class="col-1"></div>
+
+		<div class="ipsum web col-10">
+
+			<div id="paraLamp" class="paraLamp col-md-12 mt-3 " align="center">
+				<h1 id="title1" class="webT col-md-6" align="left">WEB</h1>
+
+				<div id="scene">
+
+					<div class="layer1 w-100" data-depth="0.1"><img src="Assets/Images/paralamp2.png" width="230px"
+							height="500px" /></div>
+					<div id="display" class="col-md-12 mt-3 w-100 "></div>
+					<div class="layer2 w-100" data-depth="0.3"><img src="Assets/Images/paralamp3.png" width="230px"
+							height="500px" /></div>
+
+				</div>
+
+				<h1 id="title2" class="webT col-md-7 " align="right">DESIGN</h1>
+				<div id="buttonBoss">
+					<div class="btnBack"></div>
+					<button id="likeWhat" onmousedown="buttonIn()" onmouseup="buttonOut()" class="btn-default"> Here's a nice fancy button to click on, it does nothing...?</button>
+				</div>
+
+				<svg id="svgLinez" height="100%" width="100%">
+					<line id="svgLinez1" x1="1225" y1="0" x2="0" y2="700"
+						style="stroke:rgb(85,189,212);stroke-width:12" stroke-linecap="round" /> />
+					<line id="svgLinez2" x1="1400" y1="0" x2="0" y2="700"
+						style="stroke:rgb(85,189,212);stroke-width:12" stroke-linecap="round" /> />
+				</svg>
+			</div>
+		</div>
+		<div class="col-1"></div>
+	</div>
+
+
 	<div id="whoWhereWhat" class="row">
 		<h2 class="col-md-5">WHO WE ARE</h2>
-		
-		
-		<p class="col-md-7">We are a Irish based design house. We have been operating since 2017 & have
-		no intenchions of stopping. It is our passion to create amazing visuals that evoke emotion 
-		helping you communicate your passion better. We are a collective of creative professionals 
-		that love to make, its what we do.
-		</br>
-		Our approach is to take art, fuse it to math and 
-		use technology to bring it to life.
+
+
+		<p class="col-md-7">This is meant to be a beautifully written paragraph about the very
+			traditional way this all got started but it was unconventional. It started with managing 
+			a wordpress website and grew to making pretty webpages and adding fancier and fancier tricks
+			to it until the need for back end server and other services were required for saving the 
+			state of a site or web application. End to end it grew out of necessity. 
+			
 		</p>
 	</div>
-	
+	<div id="whoWhereWhat" class="row">
+		
+
+
+		<p class="col-md-7">The real question is what can't we do? The limit is really
+			your imagination, I encourage you to let it run wild and try things your way.
+			Need a web app for interal tools? You got it. Want a wow page for your business? No problem!
+			Or even a shop to sell your creations on? You go it. Nothing is too big or too small, the only 
+			thing we are ever limited by is imagination. 
+		</p>
+		<h2 class="col-md-5">WHAT WE CAN DO</h2>
+	</div>
+	<div id="whoWhereWhat" class="row">
+		<h2 class="col-md-5">WHAT TO EXPECT</h2>
+
+
+		<p class="col-md-7">Questions, lots of them. To find a solution to a problem we have to isolate
+			where the issue is and whats causing it as well as where it came from and any further issues 
+			that may extend from it. Once we understand the issue only then can we proceed with resolving 
+			it and we tend to do that in the most exciting ways possible. Working as partners we will identify
+			any requirements, stakeholder and resources need to achieve your goal and then set a plan to realize it.
+			
+			
+		</p>
+	</div>
 
 
 
@@ -152,51 +189,54 @@ Lava Lamp Media
 
 
 
-<footer class="page-footer-default align-bottom">
-<!-- Footer Elements -->
-    <div class="container">
+	<footer class="page-footer-default align-bottom">
+		<!-- Footer Elements -->
+		<div class="container">
 
-      <!-- Grid row-->
-     
-	  <div class="row ml-auto">
-	  <div class="col-md-6 p-4">
-				<div class="mb-5 links">
-					<a href="index.html">HOME</a></br>
-					<a href="webDesign.html">WEB DESIGN</a></br>
-					<a href="graphicDesign.html">GRAPHIC DESIGN</a></br>
-					<a href="portfolio.html">PORTFOLIO</a></br>
-					<a href="contact.html">CONTACT</a>
-					
+			<!-- Grid row-->
+
+			<div class="row ml-auto">
+				<div class="col-md-6 p-4">
+					<div class="mb-5 links">
+						<a href="index.html">HOME</a></br>
+						<a href="webDesign.html">WEB DESIGN</a></br>
+						<a href="graphicDesign.html">GRAPHIC DESIGN</a></br>
+						<a href="portfolio.html">PORTFOLIO</a></br>
+						<a href="contact.html">CONTACT</a>
+
+					</div>
 				</div>
-			</div>
-		<div class="address col-md-6 p-4">
-          LAVA LAMP MEDIA.</br>
-		  124 ST.MARTINS BOULEVARD</br>
-		  SANTA MONICA,</br>
-		  CA 90474</br>
-		  <div class="links">
-		  <a class="ins-ic insta" href="https://www.instagram.com/lavalampmedia/" target="_blank">
-		  <i class="fa fa-instagram fa-lg fa-2x white-text" aria-hidden="true"></i> 
-					</a>
+				<div class="address col-md-6 p-4">
+					LAVA LAMP MEDIA.</br>
+					124 ST.MARTINS BOULEVARD</br>
+					SANTA MONICA,</br>
+					CA 90474</br>
+					<div class="links">
+						<a class="ins-ic insta" href="https://www.instagram.com/lavalampmedia/" target="_blank">
+							<i class="fa fa-instagram fa-lg fa-2x white-text" aria-hidden="true"></i>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-      <!-- Grid row-->
+		<!-- Grid row-->
 
-    </div>
-</footer>
-	
-	
-  <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">2018 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> LavaLampSolutions.com</a>
-    </div>
-    <!-- Copyright -->
-</div>
-<canvas class="background"> </canvas>
+		</div>
+	</footer>
 
-<script src="path/to/particles.min.js"></script>
+
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">2018 Copyright:
+		<a href="https://mdbootstrap.com/bootstrap-tutorial/"> LavaLampSolutions.com</a>
+	</div>
+	<!-- Copyright -->
+	</div>
+	<div id="wrapper">
+		<canvas id="background" class="background"> </canvas>
+	</div>
+
+	<script src="path/to/particles.min.js"></script>
 
 </body>
+
 </html>

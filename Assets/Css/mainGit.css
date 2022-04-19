@@ -553,9 +553,9 @@ top:-350px;
 	position:relative;
 	top:30px;
 	left:6px;
-	max-width:497.712px;
+	
 	width:100%;
-	height:36px;
+	
 	border-top:6px #fff solid;
 	border-right:6px #fff solid;
 	z-index:1;
@@ -592,9 +592,9 @@ transition:color 2s ease;
 	position:relative;
 	top:30px;
 	left:6px;
-	max-width:497.712px;
+	
 	width:100%;
-	height:36px;
+	
 	border-top:1px #fff solid;
 	border-right:1px #fff solid;
 	z-index:1;
@@ -605,6 +605,7 @@ transition:color 2s ease;
 	position:absolute;
 	top:0px;
 	left:0px;
+	
 }
 
 .Clients{
@@ -645,7 +646,8 @@ margin-left:100px;
 }
 
 #whoWhereWhat{
-	background-color:#fff;
+	/* background-color:rgba(255, 255, 255, 0.826); */
+	background: linear-gradient(0deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 75%, rgba(255,255,255,0) 100%);
 	padding:150px 20% 150px 20%;
 	margin:0px;
 	
@@ -662,7 +664,9 @@ margin-left:100px;
 
 /*WEB DESIGN*/
 
-
+.ipsum.web{
+	padding:0px !important;
+}
 
 
 /* Footer Styles*/
@@ -829,4 +833,4 @@ top:-150px;
 }
 
 }
-/*page breaks at 334px collapseing upon itself.
+/* page breaks at 334px collapseing upon itself. */

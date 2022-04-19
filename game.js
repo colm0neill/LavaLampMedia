@@ -119,6 +119,22 @@ function everyinterval(n) {
     return false;
 }
 
+document.addEventListener("keydown", (stroke) => {
+    let space = stroke.code;
+    console.log("Space is: ",space);
+    if(space == "Space"){
+        accelerate(-0.2);
+    }
+});
+
+document.addEventListener("keyup", (stroke) => {
+    let space = stroke.code;
+    console.log("Space is: ",space);
+    if(space == "Space"){
+        accelerate(0.1);
+    }
+});
+
 function accelerate(n) {
     myGamePiece.gravity = n;
 }
