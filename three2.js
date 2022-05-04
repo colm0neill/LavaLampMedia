@@ -1,22 +1,55 @@
+
+window.addEventListener("load", function() {
+    
+    // Create canvas element. The canvas is not added to the
+    // document itself, so it is never displayed in the
+    // browser window.
+    var canvas = document.createElement("canvas");
+    // Get WebGLRenderingContext from canvas element.
+    var gl = canvas.getContext("webgl")
+      || canvas.getContext("experimental-webgl");
+    // Report the result.
+    if ((gl && gl instanceof WebGLRenderingContext) ){
+      console.log("Congratulations! Your browser supports WebGL & you didn't have to lift a finger.");
+      displaythreed();
+    } else {
+     
+      var tdWrap = document.getElementById("wrapthree");
+      
+      var pr = document.createElement("div");
+      pr.innerHTML = '<h2>Sorry no 3D things for you...</h2>';
+      tdWrap.appendChild(pr);
+
+      console.error("Failed to get WebGL context.");
+      alert("Your browser or device may not support WebGL.");
+    }
+
+});
+
+function displaythreed(){
+    console.log("starting");
+
+
 "use strict";
 
 // simplified on three.js/examples/webgl_loader_gltf2.html                        
 function main() {
-    // renderer                                                                 
-    const renderer = new THREE.WebGLRenderer({antialias: true});
-    renderer.setSize(800, 600);
-    const el = document.getElementById("wrapthree");
-    el.appendChild(renderer.domElement);
-
-    // camera                                                                   
-    const camera = new THREE.PerspectiveCamera(30, 200 / 600, 1, 1000);
-    camera.position.set(30, 10, 70); // settings in `sceneList` "Monster"
-    camera.up.set(0, 1, 0);
-    camera.lookAt(new THREE.Vector3(0, 0, 0));
-
-    // scene and lights                                                         
+    const canvas = document.querySelector('#c');
+    const renderer = new THREE.WebGLRenderer({canvas, alpha: true });
+  
+    const fov = 45;
+    const aspect = 2;  // the canvas default
+    const near = 0.1;
+    const far = 100;
+    const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+    camera.position.set(0, 10, 20);
+  
+    const controls = new THREE.OrbitControls(camera, canvas);
+    controls.target.set(0, 5, 0);
+    controls.update();
+    
+    renderer.setClearColor( 0x666666, 0 );
     const scene = new THREE.Scene();
-    scene.add(new THREE.AmbientLight(0xcccccc));
 
     // load gltf model and texture                            
     const objs = [];
@@ -47,4 +80,5 @@ function main() {
     })();
     return objs;
 }
-const objs = main();
+    const objs = main();
+}
