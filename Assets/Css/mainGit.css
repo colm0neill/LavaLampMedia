@@ -645,9 +645,12 @@ margin-left:100px;
 	margin-top:80px;
 }
 
+.wrapper_para{
+	background: linear-gradient(0deg, rgb(232, 232, 232) 0%, rgba(255, 255, 255, 0.52) 50%, rgba(255, 255, 255, 0.0) 100%);
+
+}
 #whoWhereWhat{
 	/* background-color:rgba(255, 255, 255, 0.826); */
-	background: linear-gradient(0deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 75%, rgba(255,255,255,0) 100%);
 	padding:150px 20% 150px 20%;
 	margin:0px;
 	
@@ -667,6 +670,32 @@ margin-left:100px;
 .ipsum.web{
 	padding:0px !important;
 }
+
+/* Graphic design */
+.fufuWrapper{
+
+}
+
+.threedwrapper{
+border-radius: 3px;
+border: solid 1px black;
+min-height:400px;
+background-color: rgba(255, 255, 255, 0.587);
+backdrop-filter:blur(4px);
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+#c{
+	width: 100%;
+	height: 100%;
+	display: block;
+	background:transparent;
+}
+
+
+/* Graphic design */
 
 
 /* Footer Styles*/

@@ -15,6 +15,17 @@ Lava Lamp Media
 <link rel="icon" href="Assets/Images/favicon-64.png" type="image/gif" sizes="64X64">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
+<!-- Threejs Library -->
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/three.min.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/controls/OrbitControls.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/loaders/LoaderSupport.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/loaders/OBJLoader2.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/loaders/MTLLoader.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/loaders/GLTFLoader.js"></script>
+
+
+
+
 <!--Vivus .js Library-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js"></script>
 
@@ -33,6 +44,8 @@ Lava Lamp Media
 <!--<link rel="stylesheet" type="text/css" href="Assets/Css/output.css">
 <link rel="stylesheet" type="text/css" href="Assets/Css/testing.css">-->
 <script type="text/javascript" src='mainGit.js'></script>
+<!-- <script type="text/javascript" defer src='threed.js'></script> -->
+<script type="text/javascript" defer src='three2.js'></script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar navbar-inverse" data-offset="50">
@@ -92,7 +105,19 @@ Lava Lamp Media
 </nav>
 
 
-
+<div class="fufuWrapper mt-5 text-center">
+  <p>
+    <h3>I guess this is where all the fufu images and thing's go?</h3>
+  </p>
+  <div class="row my-5">
+    <div class="col-1"></div>
+  
+  <div id="wrapthree" class="threedwrapper py-3 col-10">
+      <canvas id="c"></canvas>
+  </div>
+  <div class="col-1"></div>
+</div>
+</div>
 
 
 
